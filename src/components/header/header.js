@@ -1,9 +1,10 @@
 import { Link } from "gatsby"
 import React from "react"
+import styles from "./header.module.css"
 
 export const Header = ({ siteTitle }) => (
   <header>
-      <h1>
+      <h1 className={styles.test}>
         <Link to="/">
           {siteTitle}
         </Link>
