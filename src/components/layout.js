@@ -2,13 +2,18 @@ import React from "react"
 
 import { Header } from "./header/header"
 import "./layout.css"
+import { OurBun } from "./bun/OurBun"
+import { Profi } from "./bun/Profi"
 
 export const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={"title"} />
       <div>
-        <main>{children}</main>
+        <main>
+          <OurBun />
+          <Profi />
+        </main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}

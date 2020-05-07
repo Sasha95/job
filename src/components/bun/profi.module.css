@@ -1,0 +1,3 @@
+.titleProfi {
+  compose: title from "../globalStyles.module.css";
+}

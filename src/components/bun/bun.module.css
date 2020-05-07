@@ -1,17 +1,17 @@
-.text {
-  font-size: 20px;
-  line-height: 23px;
-  font-weight: normal;
-  text-align: right;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+.image {
+  width: 89px;
+  height: 79px;
 }
 
-.text1 {
-  font-size: 20px;
-  line-height: 23px;
-  font-weight: bold;
-  text-align: right;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+.backgroud {
+  /* background-image: url("../../static/images/bg_wave_up.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain; */
+  position: absolute;
+  /* top: 0px; */
+}
+
+.content {
+  margin-top: 60px;
 }
