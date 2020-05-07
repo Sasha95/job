@@ -1,9 +1,15 @@
 import React from "react"
+import styles from "./bun.module.css"
 
 export const OurBun = () => {
-    return(
+    return (
         <div className={"container"}>
-            Text
+            <div className={styles.text}>
+                Text
+            </div>
+            <div className={styles.text1}>
+                Text
+            </div>
         </div>
     )
 }

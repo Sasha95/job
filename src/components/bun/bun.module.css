@@ -1,0 +1,17 @@
+.text {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: normal;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.text1 {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: bold;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

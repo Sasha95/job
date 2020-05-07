@@ -1,10 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import {Layout} from "../components/layout"
+import { Layout } from "../components/layout"
 import SEO from "../components/seo"
 import { OurBun } from "../components/bun/OurBun"
-import 'bootstrap/dist/css/bootstrap.css';
+import "bootstrap/dist/css/bootstrap-grid.min.css"
+import "../static/fonts/stylesheet.css"
 
 const IndexPage = () => (
   <Layout>

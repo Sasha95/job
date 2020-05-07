@@ -1,17 +1,14 @@
 import React from "react"
 
-import {Header} from "./header/header"
+import { Header } from "./header/header"
 import "./layout.css"
 
 export const Layout = ({ children }) => {
-
   return (
     <>
-      <Header siteTitle={'title'} />
+      <Header siteTitle={"title"} />
       <div>
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
