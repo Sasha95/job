@@ -3,7 +3,6 @@ import React from "react"
 
 export const Header = ({ siteTitle }) => (
   <header>
-    
       <h1>
         <Link to="/">
           {siteTitle}
