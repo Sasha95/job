@@ -1,0 +1,32 @@
+.main {
+	position: relative;
+}
+
+.image {
+	width: 89px;
+	height: 79px;
+	margin-bottom: 0;
+}
+
+.backgroud {
+	position: absolute;
+	top: 0px;
+	z-index: 0;
+}
+
+.content {
+	margin-top: 60px;
+}
+
+.wrapper {
+	margin: auto;
+	z-index: 1;
+	position: relative;
+}
+.men {
+	position: absolute;
+	right: 0;
+	bottom: -100px;
+	max-width: 435px;
+	max-height: 381px;
+}

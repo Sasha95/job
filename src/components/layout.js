@@ -1,21 +1,20 @@
 import React from "react"
 
-import {Header} from "./header/header"
+import { Header } from "./header/header"
 import "./layout.css"
+import { OurBun } from "./bun/OurBun"
+import { Footer } from "./footer/Footer"
 
 export const Layout = ({ children }) => {
-
   return (
     <>
-      <Header siteTitle={'title'} />
+      <Header siteTitle={"title"} />
       <div>
         <main>
-          {children}
+          <OurBun />
         </main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <Footer />
         </footer>
       </div>
     </>

@@ -1,0 +1,40 @@
+.titleProfi {
+	text-align: left;
+	text-transform: uppercase;
+	line-height: 140%;
+	letter-spacing: 0em;
+	color: #ffffff;
+	padding-left: 35px;
+	padding-top: 35px;
+	margin: 0;
+}
+
+.textContainer {
+	padding-left: 339px;
+	padding-bottom: 57px;
+	margin: 0;
+}
+
+.text {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 110%;
+	color: #ffffff;
+}
+
+.content {
+	background: #233aa0;
+	border-radius: 20px;
+	max-width: 1248px;
+	width: 100%;
+	margin-top: 154px;
+}
+
+.men {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	max-width: 435px;
+	max-height: 381px;
+}
