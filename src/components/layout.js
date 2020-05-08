@@ -3,6 +3,7 @@ import React from "react"
 import { Header } from "./header/header"
 import "./layout.css"
 import { OurBun } from "./bun/OurBun"
+import { Footer } from "./footer/Footer"
 
 export const Layout = ({ children }) => {
   return (
@@ -12,11 +13,9 @@ export const Layout = ({ children }) => {
         <main>
           <OurBun />
         </main>
-        {/* <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer> */}
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </>
   )
