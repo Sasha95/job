@@ -11,7 +11,7 @@ import men from "../../static/images/man.svg"
 export const OurBun = () => {
     return (
         <>
-            <img src={backgroud} alt="backgroud" className={styles.backgroud} />
+            {/*<img src={backgroud} alt="backgroud" className={styles.backgroud} />*/}
             <div className={styles.main}>
                 <div className={classnames(styles.wrapper, globalStyles.globalContainer)}>
                     <div className={"row"}>
