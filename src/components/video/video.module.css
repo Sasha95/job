@@ -1,0 +1,66 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  margin-top: 175px;
+}
+.playContainer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  cursor: pointer;
+  user-select: false;
+}
+
+.play {
+  width: 80px;
+  height: 80px;
+  user-select: false;
+}
+
+.pause {
+  compose: play;
+  display: none;
+}
+
+.container:hover .pause {
+  display: flex;
+}
+
+.fullscreenIconContainer {
+  padding: 24px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.fullscreenIconContainer:hover {
+  opacity: 0.5;
+}
+
+.stubImage {
+  position: absolute;
+  top: 0;
+  height: 479px;
+  object-fit: cover;
+  cursor: pointer;
+  z-index: 1;
+  width: 100%;
+}
+
+.image {
+  width: 24px;
+  height: 24px;
+}
+
+.video {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
