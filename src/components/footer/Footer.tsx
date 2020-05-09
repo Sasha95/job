@@ -10,7 +10,6 @@ import logo from "../../static/images/logo.svg"
 import vk from "../../static/images/social/vk.svg"
 import instagram from "../../static/images/social/instagram.svg"
 import facebook from "../../static/images/social/facebook.svg"
-import classnames from "classnames"
 
 
 export const Footer = () => {

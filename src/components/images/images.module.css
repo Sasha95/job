@@ -1,0 +1,75 @@
+.items{
+    background: #E5E5E5;
+}
+.title {
+    font-size: 54px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 100px 0 40px 0;
+    user-select: none;
+}
+
+.headText{
+    font-family: GilroyRegular;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.imgeContainer{
+    overflow-x: auto;
+    padding: 0 10px 14px 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.activityContainer{
+    margin: auto;
+    display: flex;
+    max-height: 681px;
+    user-select: none;
+}
+
+.imageBlock{
+    margin-right: 9px;
+}
+
+.downImageConteiner{
+    padding-top: 9px;
+    display: flex;
+
+}
+
+.topImageConteiner{
+    padding-bottom: 9px;
+    display: flex;
+
+}
+
+.firstSmollImage{
+    padding-right: 9px;
+}
+
+.imgeContainer::-webkit-scrollbar {
+    height: 8px;
+}
+
+.imgeContainer::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.imgeContainer::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 1px;
+    border-radius: 5px;
+    background: #ffffff;
+    -webkit-box-shadow: inset 0 0 2px rgba(193, 193, 193, 0.5);
+}

@@ -24,6 +24,10 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1",
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
