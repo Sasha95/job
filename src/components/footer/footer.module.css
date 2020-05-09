@@ -9,6 +9,12 @@
   color: #ffffff;
 }
 
+@media screen and (max-width: 991px) {
+  .titleFooter{
+    margin-top: 20px;
+  }
+}
+
 .inputContainer::before {
   content: " ";
   width: 100%;
@@ -34,8 +40,7 @@
 }
 
 .send {
-  color: #0047b3;
-
+  color: #0047b3 !important;
   cursor: pointer;
   height: 58px;
   background: #ffffff;
@@ -51,6 +56,13 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
+}
+
+@media screen and (max-width: 768px){
+  .send {
+    color: #102037 !important;
+    line-height: 23px;
+  }
 }
 
 .send:hover {
@@ -102,31 +114,6 @@
 }
 
 .image {
-  margin: 0px;
-}
-
-.social {
-  display: flex;
-
-  margin-bottom: 26px;
-}
-
-.socialContainer {
-  cursor: pointer;
-  background: #083f94;
-  border-radius: 50px;
-  width: 67px;
-  height: 67px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.socialContainer + .socialContainer {
-  margin-left: 25px;
-}
-
-.socialImg {
   margin: 0px;
 }
 

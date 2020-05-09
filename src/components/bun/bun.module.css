@@ -14,8 +14,9 @@
 
 .backgroud {
   position: absolute;
-  top: 0px;
+  top: 0;
   z-index: 0;
+  max-width: 100%;
 }
 
 .content {
@@ -36,6 +37,10 @@
 
 .text {
   font-style: normal;
+  font-weight: 500;
   font-size: 26px;
   line-height: 100%;
+  color: #000000;
+
+  line-height: 32px;
 }
