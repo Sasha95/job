@@ -1,0 +1,38 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    background-image: url("../../static/images/bg-lavr.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wrapper {
+    position: relative;
+    height: 282px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    margin-top: 100px;
+}
+
+.conatiner {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.wrapper + .wrapper {
+    margin-top: 54px;
+}
+
+.card + .card {
+    margin-left: 20px;
+}
+
+.subtitle {
+    max-width: 872px;
+}

@@ -5,6 +5,7 @@ import "./layout.css"
 import { OurBun } from "./bun/OurBun"
 import { Footer } from "./footer/Footer"
 import { TeamVideo } from "./video/TeamVideo"
+import { Raiting } from "./rating/Rating"
 
 export const Layout = ({ children }) => {
   return (
@@ -14,6 +15,7 @@ export const Layout = ({ children }) => {
         <main>
           <OurBun />
           <TeamVideo />
+          <Raiting />
         </main>
         <footer>
           <Footer />

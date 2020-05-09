@@ -1,0 +1,79 @@
+.container {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 25px;
+
+  background: #ffffff;
+  box-shadow: 0px 10px 40px rgba(32, 54, 77, 0.1);
+  border-radius: 5px;
+  width: 310px;
+  height: 262px;
+}
+.container:hover {
+  -webkit-transform: scale(1.1);
+  background: #0047b3;
+  box-shadow: 0px 10px 40px rgba(0, 71, 179, 0.4);
+  border-radius: 5px;
+  width: 330px;
+  height: 282px;
+}
+
+.hoverCard .hoverCardOn,
+.hoverCard:hover .hoverCardOff {
+  display: none;
+}
+
+.hoverCard:hover .hoverCardOn {
+  display: block;
+}
+
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 100%;
+  color: #e82b37;
+  text-transform: uppercase;
+}
+
+.titleHover {
+  composes: title;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #142130;
+  opacity: 0.8;
+}
+
+.container:hover .subtitle {
+  color: #ffffff;
+}
+
+.description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #142130;
+}
+
+.container:hover .description {
+  color: #ffffff;
+}
+
+.image {
+    justify-content: space-evenly;
+    display: flex;
+}

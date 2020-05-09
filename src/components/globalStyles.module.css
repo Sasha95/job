@@ -7,6 +7,15 @@
   color: #142130;
 }
 
+.subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  text-align: center;
+  color: #000000;
+}
+
 .globalContainer {
   max-width: 1429px;
   margin: auto;
