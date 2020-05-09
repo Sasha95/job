@@ -23,7 +23,7 @@
 }
 
 .pause {
-  compose: play;
+  composes: play;
   display: none;
 }
 
@@ -47,7 +47,7 @@
 .stubImage {
   position: absolute;
   top: 0;
-  height: 479px;
+  height: 500px;
   object-fit: cover;
   cursor: pointer;
   z-index: 1;

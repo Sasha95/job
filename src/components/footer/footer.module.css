@@ -129,3 +129,21 @@
 .socialImg {
   margin: 0px;
 }
+
+.submit {
+  margin-top: 30px;
+  width: 100%;
+  position: absolute;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.success {
+  composes: submit;
+  color: #4c0;
+}
+
+.fail {
+  composes: submit;
+  color: red;
+}
