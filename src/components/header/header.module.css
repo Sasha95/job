@@ -1,14 +1,14 @@
 .header {
+    height: 100vh;
+    background-image: url("../../static/images/rupor.svg");    
+    background-repeat: no-repeat;
     background-size: contain;
-    position: relative;
     user-select: none;
 }
-
-.rupor-header {
+.ruporHeader{
     width: 100%;
     pointer-events: none;
 }
-
 .navContainer {
     height: 100px;
     display: flex;
@@ -19,46 +19,6 @@
     z-index: 100;
     position: fixed !important;
 }
-
-.contResp {
-    display: none;
-}
-
-.flyout{
-    right: 11%;
-    position: absolute;
-    left: 11%;
-}
-.logo {
-    margin: 30px 0 10px 0;
-    pointer-events: none;
-}
-.logoLink{
-    text-decoration: none;
-    padding-bottom: 25px;
-    display: inline-grid;
-}
-
-.ruporHeader{
-    width: 100%;
-    pointer-events: none;
-}
-
-.flyoutButtons{
-    width: 100%;
-}
-.bottomLogo{
-    font-family: GilroyRegular;
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 14px;
-    line-height: 100%;
-}
-.navbarRight {
-    float: right;
-    display: flex;
-}
-
 .linkImg {
     color: #000000;
     font-family: GilroyRegular;
@@ -73,7 +33,43 @@
 .scroll .linkImg {
     color: #FFFFFF !important;
 }
+.scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    min-width: 100%;
+    background-color: #0047B3;
+    z-index: 999;
+}
 
+.scroll a{
+    color: white;
+}
+
+.logoLink{
+    text-decoration: none;
+    padding-bottom: 25px;
+    display: inline-grid;
+}
+.logo {
+    margin: 30px 0 10px 0;
+    pointer-events: none;
+}
+.bottomLogo{
+    font-family: GilroyRegular;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 100%;
+}
+.navbarRight {
+    display: flex;
+}
+.contResp {
+    display: none;
+}
 .level1:before{
     display: block;
     position: relative;
@@ -106,36 +102,6 @@
     width: 50%;
 }
 
-.scroll {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    min-width: 100%;
-    background-color: #0047B3;
-    z-index: 999;
-}
-
-.scroll a{
-    color: white;
-}
-
-.scroll .burgerBlue{
-    display: none;
-}
-
-.scroll .burgerWhite{
-    display: block;
-}
-
-.send {
-    position: absolute;
-    top: 29%;
-    left: 0;
-    user-select: none;
-}
-
 .need {
     font-style: normal;
     font-weight: normal;
@@ -144,7 +110,6 @@
     line-height: 100%;
     user-select: none;
 }
-
 .position {
     margin-top: 20px;
     font-style: normal;
@@ -159,18 +124,6 @@
     margin: auto;
     display: grid;
 }
-
-.clientIcon {
-    margin: 20px 40px 0 0;
-}
-
-.ourClients{
-    font-family: GilroyRegular;
-    font-size: 24px;
-    color: #FFFFFF;
-    margin-top: 100px;
-}
-
 .btn{
     background-color: #E82B37;
     color: #FFFFFF !important;
@@ -193,12 +146,14 @@
 .btn:focus {
     color: #FFFFFF;
 }
+.clientIcon {
+    margin: 20px 40px 0 0;
+}
 
-@media screen and (max-width: 1170px) {
-    .flyout {
-        right: 0;
-        left: 0;
-    }
+.ourClients{
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-top: 100px;
 }
 
 @media (max-width: 767px){
@@ -209,4 +164,28 @@
         min-height: initial !important;
     }
 }
+.scroll .burgerBlue{
+    display: none;
+}
+
+.scroll .burgerWhite{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
