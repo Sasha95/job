@@ -1,5 +1,5 @@
 .items{
-    background: #E5E5E5;
+    background: white;
 }
 .title {
     font-size: 54px;
@@ -13,7 +13,6 @@
 }
 
 .headText{
-    font-family: GilroyRegular;
     font-weight: 500;
     font-size: 26px;
     line-height: 140%;

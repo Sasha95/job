@@ -1,0 +1,23 @@
+.social {
+    display: flex;
+    margin-bottom: 26px;
+  }
+  
+  .socialContainer {
+    cursor: pointer;
+    background: #083f94;
+    border-radius: 50px;
+    width: 67px;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .socialContainer + .socialContainer {
+    margin-left: 25px;
+  }
+  
+  .socialImg {
+    margin: 0px;
+  }
