@@ -10,11 +10,16 @@ import hugges from "../../images/hugges.svg"
 import nokia from "../../images/nokia.svg"
 import vtb from "../../images/vtb.svg"
 import close from "../../images/close.svg"
+import "bootstrap/dist/css/bootstrap.min.css"
+
+
+
+
 
 export const Header = ({ siteTitle }) => (
-  <header className={styles.header}>
+  <header className={classnames(styles.header)}>
     <img src={rupor} alt={"rupor"} className={styles.ruporHeader}/>
-    <div className={classnames(styles.navContainer, styles.mynavbar, globalStyles.globalContainer)}>
+    <div className={classnames(styles.navContainer, styles.mynavbar, globalStyles.globalContainer, "navbar sticky-top navbar-light")}>
       <div className={styles.flyout} id="flyout-example">
           <div className={styles.flyoutButtons}>
             <a className={styles.logoLink} href = "https://dex-it.ru">

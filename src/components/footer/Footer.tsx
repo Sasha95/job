@@ -10,6 +10,7 @@ import logo from "../../static/images/logo.svg"
 import vk from "../../static/images/social/vk.svg"
 import instagram from "../../static/images/social/instagram.svg"
 import facebook from "../../static/images/social/facebook.svg"
+import classnames from "classnames"
 
 
 export const Footer = () => {
@@ -18,7 +19,7 @@ export const Footer = () => {
             <div className={classnames(globalStyles.globalContainer)}>
                 <div className={"row m-0"}>
                     <form className={"col-lg-8"}>
-                        <h1 className={globalStyles.title, styles.titleFooter}>Напишите нам</h1>
+                        <h1 className={classnames(globalStyles.title, styles.titleFooter)}>Напишите нам</h1>
                         <div className={"row m-0"}>
                             <div className={"col pl-0"}>
                                 <Input label={"Имя"} />
