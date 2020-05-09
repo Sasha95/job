@@ -1,5 +1,4 @@
 .header {
-    background: url(../../images/bg.svg) no-repeat left 0;
     background-size: contain;
     position: relative;
     user-select: none;
@@ -11,26 +10,18 @@
 }
 
 .navContainer {
-    max-width: 1410px;
     height: 100px;
     display: flex;
     justify-content: space-between;
-    /*width: -webkit-fill-available;*/
-    position: fixed;
+    width: -webkit-fill-available;
     top: 0;
     min-width: 100%;
+    z-index: 100;
+    position: fixed !important;
 }
 
 .contResp {
     display: none;
-}
-
-.mynavbar {
-    position: fixed;
-    height: 100px;
-    background-color: #0047B3;
-    z-index: 100;
-    scroll-behavior: smooth;
 }
 
 .flyout{
@@ -69,7 +60,7 @@
 }
 
 .linkImg {
-    color: #FFFFFF;
+    color: #000000;
     font-family: GilroyRegular;
     text-decoration: none !important;
     display: block;
@@ -79,18 +70,9 @@
     line-height: 22px;
 }
 
-.burgerBlue {
-    display: none;
+.scroll .linkImg {
+    color: #FFFFFF !important;
 }
-
-.burgerWhite {
-     display: none;
- }
-
-.navbarRight .icon {
-    display: none;
-}
-
 
 .level1:before{
     display: block;
@@ -136,7 +118,7 @@
 }
 
 .scroll a{
-    color: white!important;
+    color: white;
 }
 
 .scroll .burgerBlue{
@@ -149,26 +131,36 @@
 
 .send {
     position: absolute;
-    top: 33%;
-    left: 11%;
+    top: 29%;
+    left: 0;
     user-select: none;
 }
 
 .need {
     font-style: normal;
     font-weight: normal;
-    font-size: 3.22vw;
+    font-size: 2.8vw;
     color: #FFFFFF;
     line-height: 100%;
     user-select: none;
 }
 
-.carousel {
-    margin: auto;
-    width: 650px;
+.position {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5.39vw;
+    line-height: 100%;
+    color: #FFFFFF;
+    user-select: none;
 }
 
-.clientIcon{
+.carousel {
+    margin: auto;
+    display: grid;
+}
+
+.clientIcon {
     margin: 20px 40px 0 0;
 }
 
@@ -176,21 +168,22 @@
     font-family: GilroyRegular;
     font-size: 24px;
     color: #FFFFFF;
+    margin-top: 100px;
 }
 
 .btn{
     background-color: #E82B37;
-    color: #FFFFFF;
-    outline: none;
-    min-width: 200px;
-    margin-top: 68px;
+    color: #FFFFFF !important;
+    border-radius: 40px;
     padding: 25px;
+    margin: 10px;
+    min-width: 200px;
+    margin-top: 28px;
     font-size: 24px;
     line-height: 110%;
-    text-transform: inherit;
     font-weight: normal;
-    border-radius: 40px;
     max-width: 330px;
+    text-align: center;
 }
 
 .btn.active {
@@ -201,14 +194,12 @@
     color: #FFFFFF;
 }
 
-
 @media screen and (max-width: 1170px) {
     .flyout {
         right: 0;
         left: 0;
     }
 }
-
 
 @media (max-width: 767px){
     .header {
