@@ -25,9 +25,13 @@
 }
 
 @media screen and (max-width: 991px) {
-  .title{
+  .title {
     margin-top: 50px;
     margin-bottom: 30px;
+  }
+
+  .subtitle {
+    font-size: 24px;
   }
 }
 
@@ -37,11 +41,21 @@
     margin-top: 25px;
     margin-bottom: 20px;
   }
+
+  .subtitle {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 610px){
   .title{
     font-size: 40px;
     margin-top: 20px;
+  }
+
+  .subtitle {
+    margin-bottom: 20px;
+    font-size: 18px;
   }
 }
