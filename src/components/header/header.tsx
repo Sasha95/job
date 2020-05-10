@@ -40,15 +40,21 @@ export const Header = () => {
               {/*</div>*/}
             </div>
             <a href="#" className={styles.btn} data-toggle="modal" data-target="#sendResume">Напишите нам</a>
-            <span className={styles.ourClients}>Наши клиенты</span>
-            <div>
-              <img className={styles.clientIcon} src={hugges} />
-              <img className={styles.clientIcon} src={nokia} />
-              <img className={styles.clientIcon} src={vtb} />
-              <img className={styles.clientIcon} src={sber} />
-            </div>
+            
+          
           </div>
         </div>
+        
+        <div className={styles.clients}>
+              <span className={styles.ourClients}>Наши клиенты</span>
+              <div>
+                <img className={styles.clientIcon} src={hugges} />
+                <img className={styles.clientIcon} src={nokia} />
+                <img className={styles.clientIcon} src={vtb} />
+                <img className={styles.clientIcon} src={sber} />
+              </div>
+          </div>
+
         <div className={styles.raiting}>
           <img src={rating_41} alt={"tagline"} />
           <img src={rating_39} alt={"tagline"} />

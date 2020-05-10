@@ -34,22 +34,7 @@
 	/* margin: auto;
 	display: grid; */
 }
-.btn {
-	background: #e82b37;
-	color: #ffffff !important;
-	border-radius: 40px;
-	font-size: 24px;
-	line-height: 110%;
-	font-weight: normal;
-	width: 330px;
-	padding: 25px 0px;
-	margin-top: 28px;
-	margin-bottom: 107px;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+
 
 .btn.active {
 	background-color: #b90038;
@@ -90,18 +75,61 @@
 
 .raiting {
 	position: absolute;
-	right: 220px;
-	bottom: 70px;
+	right: 280px;
+	bottom: 130px;
+}
+
+.raiting img {
+	vertical-align: top;
+}
+.btn {
+	background: #e82b37;
+	color: #ffffff !important;
+	border-radius: 40px;
+	font-size: 24px;
+	line-height: 110%;
+	font-weight: normal;
+	width: 330px;
+	padding: 25px 0px;
+	margin-top: 28px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+.clients {
+	position: absolute;
+	bottom: 190px;
 }
 
 @media screen and (max-width: 1700px) {
 	.content {
 		top: 150px;
 	}
+	.clients {
+		bottom: 180px;
+	}
+	.raiting {
+		right: 236px;
+		bottom: 115px;
+	}
 }
-
+@media screen and (max-width: 1600px) {
+	.clients {
+		bottom: 160px;
+	}
+	.raiting {
+		right: 213px;
+		bottom: 92px;
+	}
+}
 @media screen and (max-width: 1500px) {
 	.content {
+		left: 20px;
+	}
+	.clients {
 		left: 20px;
 	}
 	.btn {
@@ -131,7 +159,7 @@
 		margin-top: 16px;
 	}
 	.raiting {
-		bottom: 0px;
+		bottom: 20px;
 		right: 150px;
 	}
 }
@@ -139,5 +167,6 @@
 @media screen and (max-width: 1200px) {
 	.raiting {
 		right: 100px;
+		bottom: 20px;
 	}
 }

@@ -2,6 +2,8 @@
 	display: flex;
 	justify-content: space-between;
 	width: -webkit-fill-available;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .background {
@@ -24,6 +26,7 @@
 	width: -webkit-fill-available;
 	top: 0;
 	z-index: 100;
+	align-items: self-start;
 	position: fixed !important;
 }
 .linkImg {
@@ -39,13 +42,12 @@
 .logoContainer {
 	display: flex;
 	flex-direction: column;
-	padding-left: 20px;
 }
 
 .logoLink {
 	text-decoration: none;
 	padding-bottom: 25px;
-	display: inline-grid;
+	position: absolute;
 }
 .logo {
 	margin: 30px 0 10px 0;
@@ -60,9 +62,17 @@
 .navbarRight {
 	display: flex;
 	align-items: center;
-	background: #0047b3;
-	margin-left: 0;
+	margin-left: -18px;
 }
+.background .navbarRight {
+	padding-top: 90px;
+	padding-bottom: 23px;
+}
+
+.background .linkImg {
+	margin: 0px;
+}
+
 .contResp {
 	display: none;
 }

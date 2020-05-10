@@ -19,9 +19,9 @@ export const Navbar = () => {
     }, [isClick])
 
     return (
-        <div ref={wrapperRef} className={classnames(styles.navContainer, "navbar sticky-top p-0", hidden ? styles.scroll : "")}>
+        <nav ref={wrapperRef} className={classnames(styles.navContainer, "navbar navbar-expand-xl sticky-top py-0 pr-0", hidden ? styles.scroll : "")}>
             <div className={classnames(globalStyles.globalContainer, styles.wrapper, collapse ? "" : styles.background)}>
-                <a className={classnames(styles.logoLink, "navbar-brand", collapse ? "d-flex" : "d-none")} href="https://dex-it.ru">
+                <a className={classnames(styles.logoLink, "navbar-brand p-0")} href="https://dex-it.ru">
                     <div className={styles.logoContainer}>
                         <img className={styles.logo} src={logo} />
                         <span className={styles.bottomLogo}> iT компания #1</span>
@@ -33,18 +33,14 @@ export const Navbar = () => {
                     type="button"
                     data-toggle="collapse"
                     aria-expanded="false"
+                    data-target="#navbarNav" 
+                    aria-controls="navbarNav"
                 >
                     <Burger color={collapse && !hidden ? "#0047b3" : "#ffffff"} />
                 </button>
 
-                <div className={`${collapse ? "collapse" : ""} navbar-collapse`}>
-                    <a className={classnames(styles.logoLink, "navbar-brand")} href="https://dex-it.ru">
-                        <div className={styles.logoContainer}>
-                            <img className={styles.logo} src={logo} />
-                            <span className={styles.bottomLogo}> iT компания #1</span>
-                        </div>
-                    </a>
-                    <ul id="navbarSupportedContent" className={classnames(styles.navbarRight, "navbar-nav")}>
+                <div className={`${collapse ? "collapse" : ""} navbar-collapse`} id="navbarNav">
+                    <ul className={classnames(styles.navbarRight, "navbar-nav  ml-auto")}>
                         <div className={styles.contResp}>
                             <a href="#">
                                 <div className={styles.logo}></div>
@@ -60,6 +56,6 @@ export const Navbar = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     )
 }

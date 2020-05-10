@@ -14,10 +14,10 @@ export const Layout = ({ children }) => {
       <Header siteTitle={"title"} />
       <div>
         <main>
-          <OurBun />
-          {/* <TeamVideo />
-          <Raiting />
-          <Images /> */}
+          {/* <OurBun /> */}
+          {/* <TeamVideo /> */}
+          {/* <Raiting /> */}
+          {/* <Images /> */}
         </main>
         <footer>
           <Footer />
