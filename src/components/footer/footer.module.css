@@ -3,8 +3,6 @@
 }
 
 .titleFooter {
-  margin-top: 72px;
-  /*font-size: 48px;*/
   line-height: 59px;
   color: #ffffff;
 }
@@ -128,17 +126,22 @@ composes: submit;
 color: red;
 }
 
-@media screen and (max-width: 991px) {
-  .titleFooter{
-    margin-top: 20px;
-  }
-}
+/*@media screen and (max-width: 991px) {*/
+  /*.titleFooter{*/
+    /*margin-top: 20px;*/
+  /*}*/
+/*}*/
 
 @media screen and (max-width: 768px){
   .send {
     color: #102037 !important;
     line-height: 23px;
   }
+
+  .titleFooter{
+    text-align-last: center;
+  }
+
   .image {
     height: 66px;
   }

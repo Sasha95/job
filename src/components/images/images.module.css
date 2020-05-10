@@ -7,17 +7,18 @@
     line-height: 100%;
     text-align: center;
     letter-spacing: 0.03em;
-    padding: 100px 0 40px 0;
     user-select: none;
 }
 
 .headText{
+    font-family: Gilroy;
     font-weight: 500;
     font-size: 26px;
     line-height: 140%;
     font-style: normal;
     text-align: center;
     margin-bottom: 56px;
+    padding: 0 20px;
 }
 
 .imgeContainer{
@@ -37,18 +38,17 @@
 
 .imageBlock{
     margin-right: 9px;
+    height: auto;
 }
 
-.downImageConteiner{
+.downImageContainer{
     padding-top: 9px;
     display: flex;
-
 }
 
-.topImageConteiner{
+.topImageContainer{
     padding-bottom: 9px;
     display: flex;
-
 }
 
 .firstSmollImage{
@@ -56,7 +56,7 @@
 }
 
 .imgeContainer::-webkit-scrollbar {
-    height: 8px;
+    height: 5px;
 }
 
 .imgeContainer::-webkit-scrollbar-track {
@@ -69,4 +69,49 @@
     border-radius: 5px;
     background: rgba(212, 212, 212, 1);
     -webkit-box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 991px) {
+    .headText{
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .bigImg{
+        width: 357px;
+        height: 279px;
+    }
+
+    .smallImg{
+        width: 173px;
+        height: 175px;
+    }
+
+    .downImageContainer{
+        padding-top: 7px;
+    }
+
+    .topImageContainer{
+        padding-bottom: 7px;
+        display: flex;
+    }
+    .imageBlock{
+        margin-right: 7px;
+    }
+    .headText {
+        font-size: 20px;
+        /*font-weight: normal;*/
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .image {
+        height: 40px;
+    }
+    .headText {
+        font-size: 18px;
+    }
 }
