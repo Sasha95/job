@@ -3,8 +3,6 @@
 }
 
 .titleFooter {
-  margin-top: 72px;
-  font-size: 48px;
   line-height: 59px;
   color: #ffffff;
 }
@@ -131,6 +129,51 @@
 }
 
 .fail {
-  composes: submit;
-  color: red;
+composes: submit;
+color: red;
+}
+
+/*@media screen and (max-width: 991px) {*/
+  /*.titleFooter{*/
+    /*margin-top: 20px;*/
+  /*}*/
+/*}*/
+
+@media screen and (max-width: 768px){
+  .send {
+    color: #102037 !important;
+    line-height: 23px;
+  }
+
+  .titleFooter{
+    text-align-last: center;
+  }
+
+  .image {
+    height: 66px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .image {
+    height: 40px;
+  }
+
+  .contactText {
+    font-size: 18px;
+  }
+
+  .send {
+    height: 50px;
+    min-width: 255px;
+    padding: 0;
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .footerLogo {
+    padding-bottom: 8px;
+  }
 }

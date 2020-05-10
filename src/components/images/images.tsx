@@ -35,42 +35,43 @@ export const Images = () => {
       <div className={styles.imgeContainer}>
         <div className={styles.activityContainer}>
         <div className={styles.imageBlock}>
+
           <picture>
             <source srcSet={img1webp} type="image/webp"/>
             <source srcSet={img1jpg} type="image/jpeg"/>
-            <img src={img1jpg}/>
+            <img className={styles.bigImg} src={img1jpg}/>
           </picture>
-          <div className={styles.downImageConteiner}>
+          <div className={styles.downImageContainer}>
             <picture className={styles.firstSmollImage}>
               <source srcSet={img2webp} type="image/webp"/>
               <source srcSet={img2jpg} type="image/jpeg"/>
-              <img src={img2jpg}/>
+              <img className={styles.smallImg} src={img2jpg}/>
             </picture>
             <picture>
               <source srcSet={img3webp} type="image/webp"/>
               <source srcSet={img3jpg} type="image/jpeg"/>
-              <img src={img3jpg}/>
+              <img className={styles.smallImg} src={img3jpg}/>
             </picture>
           </div>
         </div>
 
         <div className={styles.imageBlock}>
-          <div className={styles.topImageConteiner}>
+          <div className={styles.topImageContainer}>
             <picture className={styles.firstSmollImage}>
               <source srcSet={img5webp} type="image/webp"/>
               <source srcSet={img5jpg} type="image/jpeg"/>
-              <img src={img5jpg}/>
+              <img className={styles.smallImg} src={img5jpg}/>
             </picture>
             <picture>
               <source srcSet={img4webp} type="image/webp"/>
               <source srcSet={img4jpg} type="image/jpeg"/>
-              <img src={img4jpg}/>
+              <img className={styles.smallImg} src={img4jpg}/>
             </picture>
           </div>
           <picture>
             <source srcSet={img6webp} type="image/webp"/>
             <source srcSet={img6jpg} type="image/jpeg"/>
-            <img src={img6jpg}/>
+            <img className={styles.bigImg} src={img6jpg}/>
           </picture>
         </div>
 
@@ -78,39 +79,39 @@ export const Images = () => {
           <picture>
             <source srcSet={img7webp} type="image/webp"/>
             <source srcSet={img7jpg} type="image/jpeg"/>
-            <img src={img7jpg}/>
+            <img className={styles.bigImg} src={img7jpg}/>
           </picture>
-          <div className={styles.downImageConteiner}>
+          <div className={styles.downImageContainer}>
             <picture className={styles.firstSmollImage}>
               <source srcSet={img8webp} type="image/webp"/>
               <source srcSet={img8jpg} type="image/jpeg"/>
-              <img src={img8jpg}/>
+              <img className={styles.smallImg} src={img8jpg}/>
             </picture>
             <picture>
               <source srcSet={img9webp} type="image/webp"/>
               <source srcSet={img9jpg} type="image/jpeg"/>
-              <img src={img9jpg}/>
+              <img className={styles.smallImg} src={img9jpg}/>
             </picture>
           </div>
         </div>
 
         <div className={styles.imageBlock}>
-          <div className={styles.topImageConteiner}>
+          <div className={styles.topImageContainer}>
             <picture className={styles.firstSmollImage}>
               <source srcSet={img10webp} type="image/webp"/>
               <source srcSet={img10jpg} type="image/jpeg"/>
-              <img src={img10jpg}/>
+              <img className={styles.smallImg} src={img10jpg}/>
             </picture>
             <picture>
               <source srcSet={img11webp} type="image/webp"/>
               <source srcSet={img11jpg} type="image/jpeg"/>
-              <img src={img11jpg}/>
+              <img className={styles.smallImg} src={img11jpg}/>
             </picture>
           </div>
           <picture>
             <source srcSet={img12webp} type="image/webp"/>
             <source srcSet={img12jpg} type="image/jpeg"/>
-            <img src={img12jpg}/>
+            <img className={styles.bigImg} src={img12jpg}/>
           </picture>
         </div>
         </div>
