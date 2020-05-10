@@ -4,16 +4,15 @@
 
 .titleFooter {
   margin-top: 72px;
-  font-size: 48px;
+  /*font-size: 48px;*/
   line-height: 59px;
   color: #ffffff;
 }
 
-@media screen and (max-width: 991px) {
-  .titleFooter{
-    margin-top: 20px;
-  }
+.footerLogo{
+  padding-bottom: 14px;
 }
+
 
 .inputContainer::before {
   content: " ";
@@ -56,6 +55,83 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
+  justify-content: center;
+}
+
+.send:hover {
+cursor: pointer;
+background: #dee3eb;
+}
+.send:focus {
+outline: none;
+}
+
+.text {
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+color: #ffffff;
+}
+
+.bookContainer {
+max-width: 288px !important;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+margin-top: 79px;
+}
+
+.contact {
+display: flex;
+align-items: center;
+margin-top: 97px;
+}
+
+.contactText {
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 100%;
+color: #ffffff;
+margin-left: 25px;
+}
+
+.contactText + .contactText {
+margin-left: 42px;
+}
+
+.image {
+margin: 0px;
+}
+
+.submit {
+margin-top: 30px;
+width: 100%;
+position: absolute;
+justify-content: space-evenly;
+display: flex;
+}
+
+.success {
+composes: submit;
+color: #4c0;
+}
+
+.fail {
+composes: submit;
+color: red;
+}
+
+@media screen and (max-width: 991px) {
+  .titleFooter{
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 768px){
@@ -64,97 +140,30 @@
     line-height: 23px;
   }
   .image {
-    height: 65px;
+    height: 66px;
   }
 }
 
-.send:hover {
-  cursor: pointer;
-  background: #dee3eb;
-}
-.send:focus {
-  outline: none;
-}
-
-.text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  display: flex;
-  align-items: flex-end;
-  text-align: center;
-  color: #ffffff;
-}
-
-.bookContainer {
-  max-width: 288px !important;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  margin-top: 79px;
-}
-
-.contact {
-  display: flex;
-  align-items: center;
-  margin-top: 97px;
-}
-
-.contactText {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 100%;
-  color: #ffffff;
-  margin-left: 25px;
-}
-
-.contactText + .contactText {
-  margin-left: 42px;
-}
-
-.image {
-  margin: 0px;
-}
-
-.submit {
-  margin-top: 30px;
-  width: 100%;
-  position: absolute;
-  justify-content: space-evenly;
-  display: flex;
-}
-
-.success {
-  composes: submit;
-  color: #4c0;
-}
-
-.fail {
-  composes: submit;
-  color: red;
-}
-
-
-@media screen and (max-width: 610px){
+@media screen and (max-width: 610px) {
   .image {
-    height: 32px;
+    height: 40px;
   }
+
   .contactText {
     font-size: 18px;
   }
+
   .send {
     height: 50px;
     min-width: 255px;
     padding: 0;
     margin-top: 40px;
-    /*align-items: center;*/
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    height: 50px;
+  }
+
+  .footerLogo {
+    padding-bottom: 8px;
   }
 }

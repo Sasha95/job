@@ -132,7 +132,7 @@ export const Footer = () => {
                 </div>
                 <div className={"row mx-3 d-flex d-lg-none pb-4"}>
                     <div className="col">
-                        <div className={"pb-3"}>
+                        <div className={styles.footerLogo}>
                             <img className={styles.image} alt={"logo"} src={logo} />
                         </div>
                         <a href="office@dex-it.ru" className={classnames(styles.contactText, "ml-0")}>
