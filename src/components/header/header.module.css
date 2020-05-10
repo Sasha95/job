@@ -43,6 +43,11 @@
 .btn:focus {
 	color: #ffffff;
 }
+.btn:hover {
+	text-decoration: none;
+	background-color: #b90038;
+	cursor: pointer;
+}
 .clientIcon {
 	margin: 20px 40px 0 0;
 }

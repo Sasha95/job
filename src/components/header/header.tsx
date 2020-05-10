@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import globalStyles from "../globalStyles.module.css"
 import styles from "./header.module.css"
 import classnames from "classnames"
@@ -11,55 +11,71 @@ import { Navbar } from "../navbar/Navbar"
 import rupor from "../../static/images/rupor.svg"
 import rating_39 from "../../static/images/rating-39.svg"
 import rating_41 from "../../static/images/rating-41.svg"
+import { ModalShow } from "../modal/Modal"
 
 export const Header = () => {
+  const [show, setShow] = useState(false);
+  const showModal = () => {
+    setShow(true);
+  };
+
+  const hideModal = () => {
+    setShow(false);
+  };
 
   return (
-    <header className={styles.header}>
-      <img className={styles.ruporHeader} alt={"rupor"} src={rupor} />
-      <Navbar />
-      <div className={globalStyles.globalContainer}>
-        <div className={classnames(styles.content)}>
-          <span className={styles.need}>Нам нужны</span>
-          <div className={classnames(styles.carousel)}>
-            <div className="carousel-inner" role="listbox">
-              <div className={styles.position}>
-                Mobile
+    <>
+      <ModalShow show={show} hideModal={hideModal} />
+      <header className={styles.header}>
+        <img className={styles.ruporHeader} alt={"rupor"} src={rupor} />
+        <Navbar />
+        <div className={globalStyles.globalContainer}>
+          <div className={classnames(styles.content)}>
+            <span className={styles.need}>Нам нужны</span>
+            <div className={classnames(styles.carousel)}>
+              <div className="carousel-inner" role="listbox">
+                <div className={styles.position}>
+                  Mobile
               </div>
-              {/*<!-- Slide 2 -->*/}
-              {/*<div className="position item">*/}
-              {/*Back-end*/}
-              {/*</div>*/}
-              {/*<!-- Slide 3 -->*/}
-              {/*<div className="position item">*/}
-              {/*Front-end*/}
-              {/*</div>*/}
-              {/*<!-- Slide 4 -->*/}
-              {/*<div className="position item">*/}
-              {/*ML*/}
-              {/*</div>*/}
+                {/*<!-- Slide 2 -->*/}
+                {/*<div className="position item">*/}
+                {/*Back-end*/}
+                {/*</div>*/}
+                {/*<!-- Slide 3 -->*/}
+                {/*<div className="position item">*/}
+                {/*Front-end*/}
+                {/*</div>*/}
+                {/*<!-- Slide 4 -->*/}
+                {/*<div className="position item">*/}
+                {/*ML*/}
+                {/*</div>*/}
+              </div>
+              <a
+                onClick={showModal}
+                className={styles.btn}
+                data-toggle="modal"
+                >
+                Напишите нам
+              </a>
             </div>
-            <a href="#" className={styles.btn} data-toggle="modal" data-target="#sendResume">Напишите нам</a>
-            
-          
-          </div>
-        </div>
-        
-        <div className={styles.clients}>
-              <span className={styles.ourClients}>Наши клиенты</span>
-              <div>
-                <img className={styles.clientIcon} src={hugges} />
-                <img className={styles.clientIcon} src={nokia} />
-                <img className={styles.clientIcon} src={vtb} />
-                <img className={styles.clientIcon} src={sber} />
-              </div>
           </div>
 
-        <div className={styles.raiting}>
-          <img src={rating_41} alt={"tagline"} />
-          <img src={rating_39} alt={"tagline"} />
+          <div className={styles.clients}>
+            <span className={styles.ourClients}>Наши клиенты</span>
+            <div>
+              <img className={styles.clientIcon} src={hugges} />
+              <img className={styles.clientIcon} src={nokia} />
+              <img className={styles.clientIcon} src={vtb} />
+              <img className={styles.clientIcon} src={sber} />
+            </div>
+          </div>
+
+          <div className={styles.raiting}>
+            <img src={rating_41} alt={"tagline"} />
+            <img src={rating_39} alt={"tagline"} />
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   )
 }

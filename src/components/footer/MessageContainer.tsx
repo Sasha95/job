@@ -1,6 +1,6 @@
 import React, { useState, useRef, FC } from "react"
 import styles from "./meaasgeContainer.module.css"
-import { Input } from "./Input"
+import { Input } from "../input/Input"
 import attach from "../../static/images/clip.svg"
 
 interface IProps {
@@ -41,7 +41,7 @@ export const MessageContainer: FC<IProps> = ({file, fileName, setFile, setFileNa
 
     return (
         <div className={styles.container}>
-            <Input onChange={(e) => setMessage(e)} label={"Текст собщения"} />
+            <Input onChange={setMessage} label={"Текст собщения"} />
             {file && <div className={styles.fileName}>{fileName}</div>}
             <img className={styles.image} src={attach} onClick={onClickAttach} />
             <input

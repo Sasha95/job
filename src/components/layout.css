@@ -614,3 +614,6 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+.modal-open {
+  padding-right: 0px !important;
+}

@@ -15,7 +15,7 @@ export const Layout = ({ children }) => {
       <div>
         <main>
           {/* <OurBun /> */}
-          {/* <TeamVideo /> */}
+          <TeamVideo />
           {/* <Raiting /> */}
           {/* <Images /> */}
         </main>

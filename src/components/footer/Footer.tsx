@@ -2,13 +2,13 @@ import React, { useState } from "react"
 import classnames from "classnames"
 import styles from "./footer.module.css"
 import globalStyles from "../globalStyles.module.css"
-import { Input } from "./Input"
+import { Input } from "../input/Input"
 import { MessageContainer } from "./MessageContainer"
 import bookWebp from "../../static/images/book.webp"
 import book from "../../static/images/book.png"
 import logo from "../../static/images/logo.svg"
 
-import { Error } from "./Error"
+import { Error } from "../error/Error"
 import { dataURItoBLOB } from "../services/dataURItoBLOB"
 import { v1 } from "uuid"
 import { Social } from "./social/Social"
@@ -77,18 +77,18 @@ export const Footer = () => {
                         <h1 className={classnames(globalStyles.title, styles.titleFooter)}>Напишите нам</h1>
                         <div className={"row m-0 d-flex flex-column flex-md-row d-md-flex"}>
                             <div className={"col pl-0"}>
-                                <Input onChange={(e) => setName(e)} label={"Имя"} />
+                                <Input onChange={setName} label={"Имя"} />
                                 <Error isActive={nameError}>Пожалуйста, введите Ваше имя</Error>
                             </div>
                             <div className={"col pl-0 pl-md-2 mt-5 m-md-0"}>
-                                <Input onChange={(e) => setContact(e)} label={"Почта или телефон"} />
+                                <Input onChange={setContact} label={"Почта или телефон"} />
                                 <Error isActive={contactError}>Пожалуйста, заполните поле</Error>
                             </div>
                         </div>
                         <div className={"row m-0"}>
                             <div className={"col p-0"}>
                                 <MessageContainer
-                                    setMessage={(e) => setMessage(e)}
+                                    setMessage={setMessage}
                                     file={file}
                                     fileName={fileName}
                                     setFile={setFile}
