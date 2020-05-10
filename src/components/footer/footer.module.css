@@ -63,6 +63,9 @@
     color: #102037 !important;
     line-height: 23px;
   }
+  .image {
+    height: 65px;
+  }
 }
 
 .send:hover {
@@ -133,4 +136,25 @@
 .fail {
   composes: submit;
   color: red;
+}
+
+
+@media screen and (max-width: 610px){
+  .image {
+    height: 32px;
+  }
+  .contactText {
+    font-size: 18px;
+  }
+  .send {
+    height: 50px;
+    min-width: 255px;
+    padding: 0;
+    margin-top: 40px;
+    /*align-items: center;*/
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    height: 50px;
+  }
 }
