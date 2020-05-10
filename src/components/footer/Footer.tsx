@@ -12,6 +12,7 @@ import { Error } from "../error/Error"
 import { dataURItoBLOB } from "../services/dataURItoBLOB"
 import { v1 } from "uuid"
 import { Social } from "./social/Social"
+import { sendResume } from "../services/SendResume"
 
 
 export const Footer = () => {
@@ -39,32 +40,17 @@ export const Footer = () => {
         setContactError(contactCurrentError)
 
         if (!nameCurrentError && !contactCurrentError) {
+            const result = await sendResume(file, fileName, name, contact, message);
 
-            try {
-                const body = new FormData()
-                body.append("name", name)
-                body.append("phone", contact)
-                body.append("message", message)
-
-                if (file) {
-                    body.append("file", dataURItoBLOB(file), fileName)
-                }
-
-                await fetch("https://dex-it.ru/Ru/Page/TechTaskEmail", {
-                    method: "POST",
-                    headers: {
-                        // "Content-Type": "multipart/form-data",
-                    },
-                    body,
-                })
-                setSuccessMessage("Спасибо! Мы ответим Вам в течение 45 мин!")
+            if (result.status){
+                setSuccessMessage(result.message)
 
                 setName("")
                 setContact("")
                 setMessage("")
                 setKey(v1().toString())
-            } catch (error) {
-                setFailMessage(error.message)
+            } else{
+                setFailMessage(result.message)
             }
         }
     }

@@ -4,11 +4,14 @@
     padding-left: 16px !important;
     font-size: 18px !important;
     color: rgba(0, 0, 0, 0.5) !important;
-    outline: none;
 }
 
 .label {
     color: rgba(0, 0, 0, 0.5) !important;
     padding-left: 16px;
     font-size: 18px !important;
+}
+
+.area {
+    height: 140px;
 }

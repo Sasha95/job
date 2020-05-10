@@ -61,12 +61,17 @@ export const ModalShow: FC<IProps> = memo(({ show, hideModal }) => {
 
                     <div className={"row"}>
                         <div className={"col mt-2"}>
-                            <textarea
-                                rows={4}
-                                className={classnames(styles.input, "w-100")}
-                                placeholder={"Номер телефона"}
-                            // onChange={setName}
+                            <Input
+                                styleLabel={styles.label}
+                                style={classnames(styles.input, styles.area)}
+                                label={"Эл. почта"}
+                                onChange={setName}
                             />
+                        </div>
+                    </div>
+                    <div className={"row"}>
+                        <div className={"col d-flex justify-content-end"}>
+                            <a>оставить заявку</a>
                         </div>
                     </div>
                 </div>
