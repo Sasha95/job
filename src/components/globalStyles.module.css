@@ -24,6 +24,22 @@
   margin: auto;
 }
 
+.imgeContainer::-webkit-scrollbar {
+  height: 5px;
+}
+
+.imgeContainer::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.imgeContainer::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 1px;
+  border-radius: 5px;
+  background: rgba(212, 212, 212, 1);
+  -webkit-box-shadow: inset 0 0 2px rgba(165, 165, 165, 0.9);
+}
+
 @media screen and (max-width: 991px) {
   .title {
     margin-top: 50px;

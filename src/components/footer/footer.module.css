@@ -126,12 +126,6 @@ composes: submit;
 color: red;
 }
 
-/*@media screen and (max-width: 991px) {*/
-  /*.titleFooter{*/
-    /*margin-top: 20px;*/
-  /*}*/
-/*}*/
-
 @media screen and (max-width: 768px){
   .send {
     color: #102037 !important;

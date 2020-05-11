@@ -34,7 +34,7 @@ export const Images = () => {
       <p className={styles.headText}>Самое важное, что у нас происходит: конференции, участие
         в соревнованиях,<br/>
         нескучные лекции и веселые корпоративы.</p>
-      <div className={styles.imgeContainer}>
+      <div className={classnames(styles.imgeContainer, globalStyles.imgeContainer)}>
         <div className={styles.activityContainer}>
         <div className={styles.imageBlock}>
 
