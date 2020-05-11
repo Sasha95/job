@@ -2,30 +2,30 @@ import React, { useState, useRef } from "react"
 import styles from "./images.module.css"
 import globalStyle from "../globalStyles.module.css"
 import classnames from "classnames"
-import img1webp from "../../static/images/1.jpg"
-import img1jpg from "../../static/images/1.webp"
-import img2webp from "../../static/images/2.jpg"
-import img2jpg from "../../static/images/2.webp"
-import img3webp from "../../static/images/3.jpg"
-import img3jpg from "../../static/images/3.webp"
-import img4webp from "../../static/images/4.jpg"
-import img4jpg from "../../static/images/4.webp"
-import img5webp from "../../static/images/5.jpg"
-import img5jpg from "../../static/images/5.webp"
-import img6webp from "../../static/images/6.jpg"
-import img6jpg from "../../static/images/6.webp"
-import img7webp from "../../static/images/7.jpg"
-import img7jpg from "../../static/images/7.webp"
-import img8webp from "../../static/images/8.jpg"
-import img8jpg from "../../static/images/8.webp"
-import img9webp from "../../static/images/9.jpg"
-import img9jpg from "../../static/images/9.webp"
-import img10webp from "../../static/images/10.jpg"
-import img10jpg from "../../static/images/10.webp"
-import img11webp from "../../static/images/11.jpg"
-import img11jpg from "../../static/images/11.webp"
-import img12webp from "../../static/images/12.jpg"
-import img12jpg from "../../static/images/12.webp"
+import img1webp from "../../static/images/1.webp"
+import img1jpg from "../../static/images/1.jpg"
+import img2webp from "../../static/images/2.webp"
+import img2jpg from "../../static/images/2.jpg"
+import img3webp from "../../static/images/3.webp"
+import img3jpg from "../../static/images/3.jpg"
+import img4webp from "../../static/images/4.webp"
+import img4jpg from "../../static/images/4.jpg"
+import img5webp from "../../static/images/5.webp"
+import img5jpg from "../../static/images/5.jpg"
+import img6webp from "../../static/images/6.webp"
+import img6jpg from "../../static/images/6.jpg"
+import img7webp from "../../static/images/7.webp"
+import img7jpg from "../../static/images/7.jpg"
+import img8webp from "../../static/images/8.webp"
+import img8jpg from "../../static/images/8.jpg"
+import img9webp from "../../static/images/9.webp"
+import img9jpg from "../../static/images/9.jpg"
+import img10webp from "../../static/images/10.webp"
+import img10jpg from "../../static/images/10.jpg"
+import img11webp from "../../static/images/11.webp"
+import img11jpg from "../../static/images/11.jpg"
+import img12webp from "../../static/images/12.webp"
+import img12jpg from "../../static/images/12.jpg"
 
 export const Images = () => {
   return(
@@ -34,7 +34,7 @@ export const Images = () => {
       <p className={styles.headText}>Самое важное, что у нас происходит: конференции, участие
         в соревнованиях,<br/>
         нескучные лекции и веселые корпоративы.</p>
-      <div className={classnames(globalStyle.imgeContainer, styles.imgeContainer)}>
+      <div className={classnames(globalStyle.imageContainer, styles.imageContainer)}>
         <div className={styles.activityContainer}>
         <div className={styles.imageBlock}>
 
