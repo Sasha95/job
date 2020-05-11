@@ -15,7 +15,7 @@
 	z-index: 20;
 	right: 0;
 	padding-top: 30px;
-	padding-right: 98px;
+	padding-right: 80px;
 	outline: none !important;
 }
 
@@ -125,4 +125,19 @@
 
 .level1:hover:after {
 	width: 50%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.burgerContainer {
+		padding-right: 60px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.logoLink {
+		left: 30px;
+	}
+	.burgerContainer {
+		padding-right: 20px;
+	}
 }

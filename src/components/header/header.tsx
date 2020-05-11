@@ -56,7 +56,7 @@ export const Header = () => {
                 onClick={showModal}
                 className={styles.btn}
                 data-toggle="modal"
-                >
+              >
                 Напишите нам
               </a>
             </div>
@@ -64,11 +64,19 @@ export const Header = () => {
 
           <div className={styles.clients}>
             <span className={styles.ourClients}>Наши клиенты</span>
-            <div>
-              <img className={styles.vtb} src={vtb} />
-              <img className={styles.huggies} src={hugges} />
-              <img className={styles.sber} src={sber} />
-              <img className={styles.nokia} src={nokia} />
+            <div className={styles.clientsContainer}>
+              <div className={styles.vtb}>
+                <img src={vtb} alt={"vtb"} />
+              </div>
+              <div className={styles.huggies}>
+                <img src={hugges} alt={"hugges"} />
+              </div>
+              <div className={styles.sber}>
+                <img src={sber} alt={"sber"} />
+              </div>
+              <div className={styles.nokia}>
+                <img src={nokia} alt={"nokia"} />
+              </div>
             </div>
           </div>
 
