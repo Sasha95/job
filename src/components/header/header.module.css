@@ -55,6 +55,13 @@
 }
 .clientIcon {
 	margin: 20px 40px 0 0;
+	flex: 0 0 auto;
+}
+.clientsContainer {
+	display: flex;
+	flex-wrap: nowrap; 
+	width: 90vw;
+	overflow-x: scroll;
 }
 
 .ourClients {
@@ -293,9 +300,10 @@
 	}
 }
 
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 768px) { 
 	.header {
 		max-height: 402px;
+		background: #0047b3;
 	}
 	.need {
 		font-size: 28px;
@@ -322,16 +330,17 @@
 		left: 30px;
 		bottom: -40px;
 	}
-}
-
-.clientsContainer {
-	/* display: flex; */
-	/* overflow-x: scroll; */
-}
-
-
-@media screen and (max-width: 460px) { 
 	.bg1 {
-		height: 550px;
+		height: 750px;
+	}
+	.raiting {
+		margin-top: -160px;
 	}
 }
+
+
+/* @media screen and (max-width: 460px) { 
+	.bg1 {
+		height: 750px;
+	}
+} */
