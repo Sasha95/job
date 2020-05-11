@@ -72,7 +72,7 @@ export const Footer = () => {
     return (
         <div key={key} className={styles.wrapper}>
             <div className={classnames(globalStyles.globalContainer)}>
-                <div className={"row m-0 px-3"}>
+                <div className={"row m-0 px-0"}>
                     <form className={"col-lg-8 px-0"}>
                         <h1 className={classnames(globalStyles.title, styles.titleFooter)}>Напишите нам</h1>
                         <div className={"row m-0 d-flex flex-column flex-md-row d-md-flex"}>
@@ -116,7 +116,7 @@ export const Footer = () => {
                         </div>
                     </form>
 
-                    <div className={classnames("col offset-xl-1", styles.bookContainer)}>
+                    <div className={classnames("col d-flex ml-auto", styles.bookContainer)}>
                         <div className={"d-none d-lg-block"}>
                             <picture>
                                 <source srcSet={bookWebp} type="image/webp" />

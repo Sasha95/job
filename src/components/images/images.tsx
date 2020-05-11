@@ -1,5 +1,7 @@
 import React, { useState, useRef } from "react"
 import styles from "./images.module.css"
+import globalStyle from "../globalStyles.module.css"
+import classnames from "classnames"
 import img1webp from "../../static/images/1.jpg"
 import img1jpg from "../../static/images/1.webp"
 import img2webp from "../../static/images/2.jpg"
@@ -28,11 +30,11 @@ import img12jpg from "../../static/images/12.webp"
 export const Images = () => {
   return(
     <div className={styles.items}>
-      <h1 className={styles.title}>Наши мероприятия</h1>
+      <h1 className={classnames(globalStyle.title, styles.title)}>Наши мероприятия</h1>
       <p className={styles.headText}>Самое важное, что у нас происходит: конференции, участие
         в соревнованиях,<br/>
         нескучные лекции и веселые корпоративы.</p>
-      <div className={styles.imgeContainer}>
+      <div className={classnames(globalStyle.imgeContainer, styles.imgeContainer)}>
         <div className={styles.activityContainer}>
         <div className={styles.imageBlock}>
 

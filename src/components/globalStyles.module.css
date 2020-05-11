@@ -65,6 +65,14 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .globalContainer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   .title{
     font-size: 45px;
@@ -77,8 +85,8 @@
     font-size: 22px;
   }
   .globalContainer {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
