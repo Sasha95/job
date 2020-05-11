@@ -108,6 +108,26 @@
 	position: absolute;
 	bottom: 190px;
 }
+.vtb {
+	composes: clientIcon;
+	height: 38px;
+	width: 108px;
+}
+.huggies {
+	composes: clientIcon;
+	height: 40px;
+	width: 114px;
+}
+.sber {
+	composes: clientIcon;
+	height: 36px;
+	width: 159px;
+}
+.nokia {
+	composes: clientIcon;
+	height: 20px;
+	width: 120px;
+}
 
 @media screen and (max-width: 1700px) {
 	.content {
@@ -132,10 +152,10 @@
 }
 @media screen and (max-width: 1500px) {
 	.content {
-		left: 20px;
+		left: 98px;
 	}
 	.clients {
-		left: 20px;
+		left: 98px;
 	}
 	.btn {
 		margin-bottom: 50px;
@@ -173,5 +193,97 @@
 	.raiting {
 		right: 100px;
 		bottom: 20px;
+	}
+	.content {
+		top: 135px;
+	}
+	.clients {
+		bottom: 110px;
+	}
+	.vtb {
+		height: 27px;
+		width: 79px;
+	}
+	.huggies {
+		height: 29px;
+		width: 83px;
+	}
+	.sber {
+		height: 26px;
+		width: 116px;
+	}
+	.nokia {
+		height: 14px;
+		width: 88px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.raiting {
+		right: 44px;
+    	bottom: 6px;
+	}
+}
+
+.bg1 {
+	width: 100vw;
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.ruporHeader {
+		display: none;
+	}
+	.bg1 {
+		display: block;
+	}
+	.vtb {
+		width: unset;
+		height: unset;
+	}
+	.huggies {
+		width: unset;
+		height: unset;
+	}
+	.sber {
+		width: unset;
+		height: unset;
+	}
+	.nokia {
+		width: unset;
+		height: unset;
+	}
+	.clients {
+		bottom: 200px;
+	}
+	.content {
+		top: 170px;
+	}
+	.raiting{
+		right: 207px;
+		bottom: -30px;
+	}
+}
+
+@media screen and (max-width: 955px) { 
+	.raiting {
+		right: 90px;
+		bottom: -60px;
+	}
+}
+
+@media screen and (max-width: 860px) { 
+	.clients {
+		bottom: 150px;
+	}
+}
+
+@media screen and (max-width: 768px) { 
+	.content {
+		top: 140px;
+    	left: 30px;
+	}
+	.clients {
+		left: 30px;
 	}
 }

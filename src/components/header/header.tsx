@@ -9,6 +9,7 @@ import vtb from "../../static/images/vtb.svg"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Navbar } from "../navbar/Navbar"
 import rupor from "../../static/images/rupor.svg"
+import bg1 from "../../static/images/bg1.svg"
 import rating_39 from "../../static/images/rating-39.svg"
 import rating_41 from "../../static/images/rating-41.svg"
 import { ModalShow } from "../modal/Modal"
@@ -28,6 +29,7 @@ export const Header = () => {
       <ModalShow show={show} hideModal={hideModal} />
       <header className={styles.header}>
         <img className={styles.ruporHeader} alt={"rupor"} src={rupor} />
+        <img className={styles.bg1} alt={"rupor"} src={bg1} />
         <Navbar />
         <div className={globalStyles.globalContainer}>
           <div className={classnames(styles.content)}>
@@ -63,10 +65,10 @@ export const Header = () => {
           <div className={styles.clients}>
             <span className={styles.ourClients}>Наши клиенты</span>
             <div>
-              <img className={styles.clientIcon} src={hugges} />
-              <img className={styles.clientIcon} src={nokia} />
-              <img className={styles.clientIcon} src={vtb} />
-              <img className={styles.clientIcon} src={sber} />
+              <img className={styles.vtb} src={vtb} />
+              <img className={styles.huggies} src={hugges} />
+              <img className={styles.sber} src={sber} />
+              <img className={styles.nokia} src={nokia} />
             </div>
           </div>
 
