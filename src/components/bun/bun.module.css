@@ -26,6 +26,8 @@
 .wrapper {
   z-index: 1;
   position: relative;
+  box-sizing: content-box;
+  /*margin: 0;*/
 }
 .men {
   position: absolute;
@@ -45,9 +47,6 @@
 }
 
 @media screen and (max-width: 1540px) {
-  .text{
-    font-size: 22px;
-  }
   .men {
     right: 65px;
     max-width: 415px;
@@ -55,5 +54,26 @@
   .content{
     margin-right: 0;
     margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1539px){
+  .text{
+    font-size: 26px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .text{
+    font-size: 18px;
+  }
+  .men {
+    right: 65px;
+    max-width: 215px;
+    bottom: -45px;
+  }
+  .image{
+    display: none;
   }
 }

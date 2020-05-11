@@ -18,7 +18,7 @@ export const OurBun = () => {
                 </div>
                 <div className={classnames("row d-flex flex-column flex-xl-row", styles.content)}>
                     <div className={classnames("col", styles.text)}>
-                        <div className={"row"}>
+                        <div className={"row md-mb-5 mb-xl-0"}>
                             <div className={"col-lg-2 d-flex align-self-center m-0"}>
                                 <img className={styles.image} src={port} alt="port" />
                             </div>

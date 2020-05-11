@@ -25,16 +25,16 @@
   padding-right: 80px;
 }
 
-.imgeContainer::-webkit-scrollbar {
+.imageContainer::-webkit-scrollbar {
   height: 5px;
 }
 
-.imgeContainer::-webkit-scrollbar-track {
+.imageContainer::-webkit-scrollbar-track {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 
-.imgeContainer::-webkit-scrollbar-thumb {
+.imageContainer::-webkit-scrollbar-thumb {
   -webkit-border-radius: 1px;
   border-radius: 5px;
   background: rgba(212, 212, 212, 1);
@@ -99,5 +99,10 @@
   .subtitle {
     margin-bottom: 20px;
     font-size: 18px;
+  }
+
+  .globalContainer {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
