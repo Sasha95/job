@@ -16,17 +16,17 @@ export const OurBun = () => {
                 <div className={"row"}>
                     <h1 className={classnames(globalStyles.title, styles.title)}>#нашиПЛЮШКИ</h1>
                 </div>
-                <div className={classnames("row", styles.content)}>
+                <div className={classnames("row d-flex flex-column flex-xl-row", styles.content)}>
                     <div className={classnames("col", styles.text)}>
                         <div className={"row"}>
                             <div className={"col-lg-2 d-flex align-self-center m-0"}>
                                 <img className={styles.image} src={port} alt="port" />
                             </div>
                             <div className={classnames("col", styles.text)}>
-                                Высокая заработная плата <br />
-                                Максимально гибкий график<br />
-                                Программа переселения из других городов<br />
-                                Спортивные активитеты (байдарки, велосипеды, пейнбол, картинг, боулинг)
+                                <span>Высокая заработная плата <br /></span>
+                                <span>Максимально гибкий график<br /></span>
+                                <span>Программа переселения из других городов<br /></span>
+                                <span>Спортивные активитеты (байдарки, велосипеды, пейнбол, картинг, боулинг)</span>
                             </div>
                         </div>
                     </div>
@@ -35,12 +35,12 @@ export const OurBun = () => {
                             <div className={"col-lg-2 d-flex align-self-center"}>
                                 <img className={styles.image} src={handshake} alt="handshake" />
                             </div>
-                            <div className={classnames("col", styles.text)}>
-                                Горячие обеды за счет компании<br />
-                                    Просторный офис в самом центре города<br />
-                                    Книжная библиотека, PlayStation, кальян<br />
-                                    Печеньки, фрукты и мороженое!)<br />
-                                    Своя футбольная команда по мини-футболу
+                                <div className={classnames("col", styles.text)}>
+                                    <span>Горячие обеды за счет компании<br/></span>
+                                    <span>Просторный офис в самом центре города<br/></span>
+                                    <span>Книжная библиотека, PlayStation, кальян<br/></span>
+                                    <span>Печеньки, фрукты и мороженое!)<br/></span>
+                                    <span>Своя футбольная команда по мини-футболу</span>
                                 </div>
                         </div>
                     </div>

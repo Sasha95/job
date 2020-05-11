@@ -37,3 +37,15 @@
   max-width: 435px;
   max-height: 381px;
 }
+
+@media screen and (max-width: 1540px) {
+  .text{
+    font-size: 32px;
+  }
+  .textContainer{
+    padding-left: 250px;
+  }
+  .content{
+    max-width: 1150px;
+  }
+}

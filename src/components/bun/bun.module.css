@@ -41,6 +41,19 @@
   font-size: 26px;
   line-height: 100%;
   color: #000000;
-
   line-height: 32px;
+}
+
+@media screen and (max-width: 1540px) {
+  .text{
+    font-size: 22px;
+  }
+  .men {
+    right: 65px;
+    max-width: 415px;
+  }
+  .content{
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
