@@ -2,6 +2,7 @@
     background: white;
 }
 .title {
+    font-size: 54px;
     font-style: normal;
     font-weight: bold;
     line-height: 100%;
@@ -23,8 +24,8 @@
 
 .imgeContainer{
     overflow-x: auto;
-    margin: 0 10px 10px 10px;
-    padding-bottom: 2px;
+    padding: 0 10px 14px 10px;
+    display: flex;
     justify-content: center;
 
 }

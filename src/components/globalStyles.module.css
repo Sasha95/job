@@ -1,5 +1,4 @@
 .title {
-  font-family: Gilroy;
   margin-top: 72px;
   margin-bottom: 40px;
   font-style: normal;
@@ -22,6 +21,8 @@
 .globalContainer {
   max-width: 1429px;
   margin: auto;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .imgeContainer::-webkit-scrollbar {
@@ -49,6 +50,10 @@
   }
 }
 
+@media screen and (max-width: 1540px) {
+  
+}
+
 @media screen and (max-width: 991px) {
   .title {
     margin-top: 50px;
@@ -70,6 +75,10 @@
   .subtitle {
     margin-bottom: 20px;
     font-size: 22px;
+  }
+  .globalContainer {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 

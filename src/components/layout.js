@@ -11,17 +11,17 @@ import { Images } from "./images/images"
 export const Layout = ({ children }) => {
   return (
     <>
-      {/*<Header siteTitle={"title"} />*/}
+      <Header siteTitle={"title"} />
       <div>
         <main>
           <OurBun />
           <TeamVideo />
           <Raiting />
-          {/*<Images />*/}
+          <Images />
         </main>
-        {/*<footer>*/}
-          {/*<Footer />*/}
-        {/*</footer>*/}
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </>
   )

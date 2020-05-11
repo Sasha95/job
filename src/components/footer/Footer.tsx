@@ -2,16 +2,16 @@ import React, { useState } from "react"
 import classnames from "classnames"
 import styles from "./footer.module.css"
 import globalStyles from "../globalStyles.module.css"
-import { Input } from "./Input"
 import { MessageContainer } from "./MessageContainer"
 import bookWebp from "../../static/images/book.webp"
 import book from "../../static/images/book.png"
 import logo from "../../static/images/logo.svg"
 
-import { Error } from "./Error"
 import { dataURItoBLOB } from "../services/dataURItoBLOB"
 import { v1 } from "uuid"
 import { Social } from "./social/Social"
+import { Input } from "../input/Input"
+import { Error } from "../error/Error"
 
 
 export const Footer = () => {
@@ -73,7 +73,7 @@ export const Footer = () => {
         <div key={key} className={styles.wrapper}>
             <div className={classnames(globalStyles.globalContainer)}>
                 <div className={"row m-0 px-3"}>
-                    <form className={"col-lg-8"}>
+                    <form className={"col-lg-8 px-0"}>
                         <h1 className={classnames(globalStyles.title, styles.titleFooter)}>Напишите нам</h1>
                         <div className={"row m-0 d-flex flex-column flex-md-row d-md-flex"}>
                             <div className={"col pl-0"}>
