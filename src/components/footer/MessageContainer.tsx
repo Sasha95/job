@@ -1,7 +1,7 @@
 import React, { useState, useRef, FC } from "react"
 import styles from "./meaasgeContainer.module.css"
-import attach from "../../static/images/clip.svg"
 import { Input } from "../input/Input"
+import { Clip } from "../../static/images/Clip"
 
 interface IProps {
     setFile: (x: any) => void;
@@ -11,7 +11,7 @@ interface IProps {
     fileName: string;
 }
 
-export const MessageContainer: FC<IProps> = ({file, fileName, setFile, setFileName, setMessage}) => {
+export const MessageContainer: FC<IProps> = ({ file, fileName, setFile, setFileName, setMessage }) => {
     const fileInputRef = useRef(null)
 
     const onClickAttach = () => {
@@ -43,7 +43,7 @@ export const MessageContainer: FC<IProps> = ({file, fileName, setFile, setFileNa
         <div className={styles.container}>
             <Input onChange={setMessage} label={"Текст собщения"} />
             {file && <div className={styles.fileName}>{fileName}</div>}
-            <img className={styles.image} src={attach} onClick={onClickAttach} />
+            <Clip classname={styles.image} color={"#FFFFFF"} onClick={onClickAttach} />
             <input
                 className={styles.attachFile}
                 ref={fileInputRef}

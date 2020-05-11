@@ -13,6 +13,7 @@ import bg1 from "../../static/images/bg1.svg"
 import rating_39 from "../../static/images/rating-39.svg"
 import rating_41 from "../../static/images/rating-41.svg"
 import { ModalShow } from "../modal/Modal"
+import Carousel from 'react-bootstrap/Carousel'
 
 export const Header = () => {
   const [show, setShow] = useState(false);
@@ -34,32 +35,40 @@ export const Header = () => {
         <div className={globalStyles.globalContainer}>
           <div className={classnames(styles.content)}>
             <span className={styles.need}>Нам нужны</span>
-            <div className={classnames(styles.carousel)}>
-              <div className="carousel-inner" role="listbox">
+
+
+            <Carousel controls={false} indicators={false} interval={2000}>
+              <Carousel.Item>
                 <div className={styles.position}>
                   Mobile
-              </div>
-                {/*<!-- Slide 2 -->*/}
-                {/*<div className="position item">*/}
-                {/*Back-end*/}
-                {/*</div>*/}
-                {/*<!-- Slide 3 -->*/}
-                {/*<div className="position item">*/}
-                {/*Front-end*/}
-                {/*</div>*/}
-                {/*<!-- Slide 4 -->*/}
-                {/*<div className="position item">*/}
-                {/*ML*/}
-                {/*</div>*/}
-              </div>
-              <a
-                onClick={showModal}
-                className={styles.btn}
-                data-toggle="modal"
-              >
-                Напишите нам
+                </div>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className={styles.position}>
+                  Back-end
+                </div>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className={styles.position}>
+                  Front-end
+                </div>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className={styles.position}>
+                  ML
+                </div>
+              </Carousel.Item>
+            </Carousel>
+
+
+
+            <a
+              onClick={showModal}
+              className={classnames(styles.btn, globalStyles.btn)}
+              data-toggle="modal"
+            >
+              Напишите нам
               </a>
-            </div>
           </div>
 
           <div className={styles.clients}>

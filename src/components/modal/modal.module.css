@@ -1,17 +1,98 @@
 .input {
-    background-color: rgba(20, 33, 48, 0.03) !important;
-    border-radius: 5px;
-    padding-left: 16px !important;
-    font-size: 18px !important;
-    color: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(20, 33, 48, 0.03) !important;
+  border-radius: 5px;
+  padding-left: 16px !important;
+  font-size: 18px !important;
+  color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .label {
-    color: rgba(0, 0, 0, 0.5) !important;
-    padding-left: 16px;
-    font-size: 18px !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+  padding-left: 16px;
+  font-size: 18px !important;
 }
 
-.area {
-    height: 140px;
+/* .area {
+  height: 140px;
+} */
+
+.headerModal {
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+}
+
+.headerModal button {
+  margin-right: 0px !important;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.fileUpload {
+  position: relative;
+  border: 2px solid #e82b37;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 100%;
+  height: 50px;
+}
+
+.clipContainer {
+  display: flex;
+  align-items: center;
+}
+
+.clip {
+  padding-right: 20px;
+}
+
+.success {
+  border: 2px solid #3cbc3c;
+}
+
+.clipFont {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #e82b37;
+  text-transform: uppercase;
+}
+
+.btn {
+  composes: btn from "../globalStyles.module.css";
+  font-style: normal;
+  font-size: 18px;
+  display: flex;
+  text-align: center;
+  letter-spacing: 0.05em;
+  height: 60px;
+  max-width: 298px;
+  width: -webkit-fill-available;
+  margin-top: 24px;
+}
+.btn.active {
+  background-color: #b90038;
+  color: #ffffff;
+}
+.btn:focus {
+  color: #ffffff;
+}
+.btn:hover {
+  text-decoration: none;
+  background-color: #b90038;
+  cursor: pointer;
+}
+
+.resultSend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }

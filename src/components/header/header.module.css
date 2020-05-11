@@ -35,23 +35,6 @@
   user-select: none;
 }
 
-.carousel {
-  /* margin: auto;
-	display: grid; */
-}
-
-.btn.active {
-  background-color: #b90038;
-  color: #ffffff;
-}
-.btn:focus {
-  color: #ffffff;
-}
-.btn:hover {
-  text-decoration: none;
-  background-color: #b90038;
-  cursor: pointer;
-}
 .clientIcon {
   margin: 20px 40px 0 0;
   flex: 0 0 auto;
@@ -98,22 +81,6 @@
 .raiting img {
   display: flex;
   align-self: flex-start;
-}
-.btn {
-  background: #e82b37;
-  color: #ffffff !important;
-  border-radius: 40px;
-  font-size: 24px;
-  line-height: 110%;
-  font-weight: normal;
-  width: 330px;
-  padding: 25px 0px;
-  margin-top: 28px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
 }
 
 .clients {
