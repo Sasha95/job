@@ -127,8 +127,17 @@
 	width: 50%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.burgerContainer {
+		padding-right: 60px;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.logoLink {
 		left: 30px;
+	}
+	.burgerContainer {
+		padding-right: 20px;
 	}
 }
