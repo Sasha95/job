@@ -12,7 +12,7 @@ export const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={"title"} />
-      {/* <div>
+      <div>
         <main>
           <OurBun />
           <TeamVideo />
@@ -22,7 +22,7 @@ export const Layout = ({ children }) => {
         <footer>
           <Footer />
         </footer>
-      </div> */}
+      </div>
     </>
   )
 }

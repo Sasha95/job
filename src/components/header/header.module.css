@@ -1,6 +1,6 @@
 .header {
-	user-select: none;
-	position: relative;
+  user-select: none;
+  position: relative;
 }
 
 /* .wrapper {
@@ -13,331 +13,334 @@
 } */
 
 .ruporHeader {
-	width: 100%;
-	pointer-events: none;
+  width: 100%;
+  pointer-events: none;
 }
 
 .need {
-	font-style: normal;
-	font-weight: normal;
-	font-size: 2.8vw;
-	color: #ffffff;
-	line-height: 100%;
-	user-select: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8vw;
+  color: #ffffff;
+  line-height: 100%;
+  user-select: none;
 }
 .position {
-	margin-top: 24px;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 5.39vw;
-	line-height: 100%;
-	color: #ffffff;
-	user-select: none;
+  margin-top: 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5.39vw;
+  line-height: 100%;
+  color: #ffffff;
+  user-select: none;
 }
 
 .carousel {
-	/* margin: auto;
+  /* margin: auto;
 	display: grid; */
 }
 
-
 .btn.active {
-	background-color: #b90038;
-	color: #ffffff;
+  background-color: #b90038;
+  color: #ffffff;
 }
 .btn:focus {
-	color: #ffffff;
+  color: #ffffff;
 }
 .btn:hover {
-	text-decoration: none;
-	background-color: #b90038;
-	cursor: pointer;
+  text-decoration: none;
+  background-color: #b90038;
+  cursor: pointer;
 }
 .clientIcon {
-	margin: 20px 40px 0 0;
-	flex: 0 0 auto;
+  margin: 20px 40px 0 0;
+  flex: 0 0 auto;
 }
 .clientsContainer {
-	display: flex;
-	flex-wrap: nowrap; 
-	width: 90vw;
-	overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 90vw;
+  overflow: hidden;
 }
 
 .ourClients {
-	font-size: 24px;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 24px;
-	line-height: 29px;
-	letter-spacing: 0.02em;
-	color: #ffffff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
 
 .scroll .burgerBlue {
-	display: none;
+  display: none;
 }
 
 .scroll .burgerWhite {
-	display: block;
+  display: block;
 }
 
 .content {
-	position: absolute;
-	top: 200px;
+  position: absolute;
+  top: 200px;
 }
 
 .raiting {
-	position: absolute;
-	display: flex;
+  position: absolute;
+  display: flex;
 
-	right: 280px;
-	bottom: 130px;
-	z-index: 10;
+  right: 280px;
+  bottom: 130px;
+  z-index: 10;
 }
 
 .raiting img {
-    display: flex;
-    align-self: flex-start;
+  display: flex;
+  align-self: flex-start;
 }
 .btn {
-	background: #e82b37;
-	color: #ffffff !important;
-	border-radius: 40px;
-	font-size: 24px;
-	line-height: 110%;
-	font-weight: normal;
-	width: 330px;
-	padding: 25px 0px;
-	margin-top: 28px;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-transform: uppercase;
+  background: #e82b37;
+  color: #ffffff !important;
+  border-radius: 40px;
+  font-size: 24px;
+  line-height: 110%;
+  font-weight: normal;
+  width: 330px;
+  padding: 25px 0px;
+  margin-top: 28px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
 }
 
 .clients {
-	position: absolute;
-	bottom: 190px;
+  position: absolute;
+  bottom: 190px;
 }
 .vtb {
-	composes: clientIcon;
-	height: 38px;
-	width: 108px;
+  composes: clientIcon;
+  height: 38px;
+  width: 108px;
 }
 .huggies {
-	composes: clientIcon;
-	height: 40px;
-	width: 114px;
+  composes: clientIcon;
+  height: 40px;
+  width: 114px;
 }
 .sber {
-	composes: clientIcon;
-	height: 36px;
-	width: 159px;
+  composes: clientIcon;
+  height: 36px;
+  width: 159px;
 }
 .nokia {
-	composes: clientIcon;
-	height: 20px;
-	width: 120px;
+  composes: clientIcon;
+  height: 20px;
+  width: 120px;
 }
 
 @media screen and (max-width: 1700px) {
-	.content {
-		top: 150px;
-	}
-	.clients {
-		bottom: 180px;
-	}
-	.raiting {
-		right: 236px;
-		bottom: 115px;
-	}
+  .content {
+    top: 150px;
+  }
+  .clients {
+    bottom: 180px;
+  }
+  .raiting {
+    right: 236px;
+    bottom: 115px;
+  }
 }
 @media screen and (max-width: 1600px) {
-	.clients {
-		bottom: 160px;
-	}
-	.raiting {
-		right: 213px;
-		bottom: 92px;
-	}
+  .clients {
+    bottom: 160px;
+  }
+  .raiting {
+    right: 213px;
+    bottom: 92px;
+  }
 }
 @media screen and (max-width: 1500px) {
-	.content {
-		left: 80px;
-	}
-	.clients {
-		left: 80px;
-	}
-	.btn {
-		margin-bottom: 50px;
-	}
-	.raiting {
-		bottom: 50px;
-		right: 190px;
-	}
+  .content {
+    left: 80px;
+  }
+  .clients {
+    left: 80px;
+  }
+  .btn {
+    margin-bottom: 50px;
+  }
+  .raiting {
+    bottom: 50px;
+    right: 190px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
-	.raiting {
-		bottom: 30px;
-		right: 170px;
-	}
+  .raiting {
+    bottom: 30px;
+    right: 170px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
-	.btn {
-		padding: 15px;
-		width: 250px;
-		margin: 16px 0px 56px 0px;
-	}
-	.position {
-		font-size: 48px;
-		margin-top: 16px;
-	}
-	.raiting {
-		bottom: 20px;
-		right: 150px;
-	}
+  .btn {
+    padding: 15px;
+    width: 250px;
+    margin: 16px 0px 56px 0px;
+  }
+  .position {
+    font-size: 48px;
+    margin-top: 16px;
+  }
+  .raiting {
+    bottom: 20px;
+    right: 150px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-	.raiting {
-		right: 100px;
-		bottom: 20px;
-	}
-	.content {
-		top: 135px;
-	}
-	.clients {
-		bottom: 110px;
-	}
-	.vtb {
-		height: 27px;
-		width: 79px;
-	}
-	.huggies {
-		height: 29px;
-		width: 83px;
-	}
-	.sber {
-		height: 26px;
-		width: 116px;
-	}
-	.nokia {
-		height: 14px;
-		width: 88px;
-	}
+  .raiting {
+    right: 100px;
+    bottom: 20px;
+  }
+  .content {
+    top: 135px;
+  }
+  .clients {
+    bottom: 110px;
+  }
+  .vtb {
+    height: 27px;
+    width: 79px;
+  }
+  .huggies {
+    height: 29px;
+    width: 83px;
+  }
+  .sber {
+    height: 26px;
+    width: 116px;
+  }
+  .nokia {
+    height: 14px;
+    width: 88px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
-	.raiting {
-		right: 44px;
-    	bottom: 6px;
-	}
+  .raiting {
+    right: 44px;
+    bottom: 6px;
+  }
 }
 
 .bg1 {
-	width: 100vw;
-	display: none;
+  width: 100vw;
+  display: none;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-	.clients {
-		left: 60px;
-	}
-	.content {
-		left: 60px;
-	}
+  .clients {
+    left: 60px;
+  }
+  .content {
+    left: 60px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-	.ruporHeader {
-		display: none;
-	}
-	.bg1 {
-		display: block;
-	}
-	.vtb {
-		width: unset;
-		height: unset;
-	}
-	.huggies {
-		width: unset;
-		height: unset;
-	}
-	.sber {
-		width: unset;
-		height: unset;
-	}
-	.nokia {
-		width: unset;
-		height: unset;
-	}
-	.clients {
-		bottom: 200px;
-	}
-	.content {
-		top: 170px;
-	}
-	.raiting{
-		right: 207px;
-		bottom: -30px;
-	}
+  .ruporHeader {
+    display: none;
+  }
+  .bg1 {
+    display: block;
+  }
+  .vtb {
+    width: unset;
+    height: unset;
+  }
+  .huggies {
+    width: unset;
+    height: unset;
+  }
+  .sber {
+    width: unset;
+    height: unset;
+  }
+  .nokia {
+    width: unset;
+    height: unset;
+  }
+  .clients {
+    bottom: 200px;
+  }
+  .content {
+    top: 170px;
+  }
+  .raiting {
+    right: 207px;
+    bottom: -30px;
+  }
 }
 
-@media screen and (max-width: 955px) { 
-	.raiting {
-		right: 90px;
-		bottom: -60px;
-	}
+@media screen and (max-width: 955px) {
+  .raiting {
+    right: 90px;
+    bottom: -60px;
+  }
 }
 
-@media screen and (max-width: 860px) { 
-	.clients {
-		bottom: 150px;
-	}
+@media screen and (max-width: 860px) {
+  .clients {
+    bottom: 150px;
+  }
 }
 
-@media screen and (max-width: 768px) { 
-	.header {
-		max-height: 402px;
-		background: #0047b3;
-	}
-	.need {
-		font-size: 28px;
-	}
-	.position{
-		font-size: 40px;
-	}
-	.btn {
-		height: 50px;
-	}
-	.content {
-		top: 140px;
-    	left: 30px;
-	}
-	.raiting {
-		position: relative;
-		right: unset;
-		bottom: unset;
-		display: flex;
-		justify-content: center;
-		/* margin-top: 50px; */
-	}
-	.clients {
-		left: 30px;
-		bottom: -40px;
-	}
-	.bg1 {
-		height: 750px;
-	}
-	.raiting {
-		margin-top: -160px;
-	}
+@media screen and (max-width: 768px) {
+  .header {
+    max-height: 402px;
+    background: #0047b3;
+    margin-bottom: 320px;
+  }
+  .need {
+    font-size: 28px;
+  }
+  .position {
+    font-size: 40px;
+  }
+  .btn {
+    height: 50px;
+  }
+  .content {
+    top: 140px;
+    left: 30px;
+  }
+  .raiting {
+    position: relative;
+    right: unset;
+    bottom: unset;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 50px; */
+  }
+  .clients {
+    left: 30px;
+    bottom: -40px;
+  }
+  .bg1 {
+    height: 750px;
+  }
+  .raiting {
+    margin-top: -160px;
+  }
+  .clientsContainer {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
 }
-
 
 /* @media screen and (max-width: 460px) { 
 	.bg1 {

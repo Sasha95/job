@@ -39,7 +39,6 @@ export const Footer = () => {
         setContactError(contactCurrentError)
 
         if (!nameCurrentError && !contactCurrentError) {
-
             try {
                 const body = new FormData()
                 body.append("name", name)
