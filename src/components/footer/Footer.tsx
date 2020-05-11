@@ -2,16 +2,16 @@ import React, { useState } from "react"
 import classnames from "classnames"
 import styles from "./footer.module.css"
 import globalStyles from "../globalStyles.module.css"
-import { Input } from "./Input"
 import { MessageContainer } from "./MessageContainer"
 import bookWebp from "../../static/images/book.webp"
 import book from "../../static/images/book.png"
 import logo from "../../static/images/logo.svg"
 
-import { Error } from "./Error"
+import { Error } from "../error/Error"
 import { v1 } from "uuid"
 import { Social } from "./social/Social"
 import { sendResume } from "../services/SendResume"
+import { Input } from "../input/Input"
 
 
 export const Footer = () => {
@@ -57,8 +57,8 @@ export const Footer = () => {
     return (
         <div key={key} className={styles.wrapper}>
             <div className={classnames(globalStyles.globalContainer)}>
-                <div className={"row m-0 px-3"}>
-                    <form className={"col-lg-8"}>
+                <div className={"row m-0 px-0"}>
+                    <form className={"col-lg-8 px-0"}>
                         <h1 className={classnames(globalStyles.title, styles.titleFooter)}>Напишите нам</h1>
                         <div className={"row m-0 d-flex flex-column flex-md-row d-md-flex"}>
                             <div className={"col pl-0"}>
@@ -101,7 +101,7 @@ export const Footer = () => {
                         </div>
                     </form>
 
-                    <div className={classnames("col offset-xl-1", styles.bookContainer)}>
+                    <div className={classnames("col d-flex ml-auto", styles.bookContainer)}>
                         <div className={"d-none d-lg-block"}>
                             <picture>
                                 <source srcSet={bookWebp} type="image/webp" />
@@ -117,7 +117,7 @@ export const Footer = () => {
                 </div>
                 <div className={"row mx-3 d-flex d-lg-none pb-4"}>
                     <div className="col">
-                        <div className={"pb-3"}>
+                        <div className={styles.footerLogo}>
                             <img className={styles.image} alt={"logo"} src={logo} />
                         </div>
                         <a href="office@dex-it.ru" className={classnames(styles.contactText, "ml-0")}>

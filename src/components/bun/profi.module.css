@@ -37,3 +37,37 @@
   max-width: 435px;
   max-height: 381px;
 }
+
+@media screen and (max-width: 1540px) {
+  .text{
+    font-size: 32px;
+  }
+  .textContainer{
+    padding-left: 250px;
+  }
+  .content{
+    max-width: 1150px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text{
+    font-size: 18px;
+  }
+  .titleProfi{
+    font-size: 28px;
+    padding-left: 16px;
+    margin-bottom: 46px;
+  }
+  .textContainer{
+    padding-left: 32px;
+  }
+}
+
+
+@media screen and (max-width: 580px) {
+  .textContainer {
+    padding-bottom: 100px;
+  }
+}
