@@ -64,7 +64,7 @@ export const Header = () => {
 
           <div className={styles.clients}>
             <span className={styles.ourClients}>Наши клиенты</span>
-            <div>
+            <div className={styles.clientsContainer}>
               <img className={styles.vtb} src={vtb} />
               <img className={styles.huggies} src={hugges} />
               <img className={styles.sber} src={sber} />

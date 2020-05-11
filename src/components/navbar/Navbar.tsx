@@ -19,7 +19,7 @@ export const Navbar = () => {
     }, [isClick])
 
     return (
-        <nav ref={wrapperRef} className={classnames(styles.navContainer, "navbar navbar-expand-xl sticky-top py-0 pr-0", hidden ? styles.scroll : "")}>
+        <nav ref={wrapperRef} className={classnames(styles.navContainer, "navbar navbar-expand-xl sticky-top p-0", hidden ? styles.scroll : "")}>
             <div className={classnames(globalStyles.globalContainer, styles.wrapper, collapse ? "" : styles.background)}>
                 <a className={classnames(styles.logoLink, "navbar-brand p-0")} href="https://dex-it.ru">
                     <div className={styles.logoContainer}>
@@ -36,7 +36,7 @@ export const Navbar = () => {
                     data-target="#navbarNav" 
                     aria-controls="navbarNav"
                 >
-                    <Burger color={collapse && !hidden ? "#0047b3" : "#ffffff"} />
+                    <Burger color={collapse && !hidden && window.innerWidth > 1024 ? "#0047b3" : "#ffffff"} />
                 </button>
 
                 <div className={`${collapse ? "collapse" : ""} navbar-collapse`} id="navbarNav">

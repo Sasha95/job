@@ -1,11 +1,16 @@
 .header {
-	/* height: 100%;
-	background-image: url("../../static/images/rupor.svg");
-	background-repeat: no-repeat;
-	background-size: contain; */
 	user-select: none;
 	position: relative;
 }
+
+/* .wrapper {
+	background-image: url("../../static/images/bg1.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left top;
+	min-height: 600px;
+	display: none;
+} */
 
 .ruporHeader {
 	width: 100%;
@@ -54,17 +59,14 @@
 
 .ourClients {
 	font-size: 24px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: 0.02em;
 	color: #ffffff;
 }
 
-@media (max-width: 767px) {
-	.header {
-		max-height: 402px;
-		height: 100vh;
-		background: #0047b3;
-		min-height: initial !important;
-	}
-}
 .scroll .burgerBlue {
 	display: none;
 }
@@ -80,12 +82,16 @@
 
 .raiting {
 	position: absolute;
+	display: flex;
+
 	right: 280px;
 	bottom: 130px;
+	z-index: 10;
 }
 
 .raiting img {
-	vertical-align: top;
+    display: flex;
+    align-self: flex-start;
 }
 .btn {
 	background: #e82b37;
@@ -152,10 +158,10 @@
 }
 @media screen and (max-width: 1500px) {
 	.content {
-		left: 98px;
+		left: 80px;
 	}
 	.clients {
-		left: 98px;
+		left: 80px;
 	}
 	.btn {
 		margin-bottom: 50px;
@@ -177,7 +183,7 @@
 	.btn {
 		padding: 15px;
 		width: 250px;
-		margin: 16px 0px 58px 0px;
+		margin: 16px 0px 56px 0px;
 	}
 	.position {
 		font-size: 48px;
@@ -230,6 +236,15 @@
 	display: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.clients {
+		left: 60px;
+	}
+	.content {
+		left: 60px;
+	}
+}
+
 @media screen and (max-width: 1024px) {
 	.ruporHeader {
 		display: none;
@@ -278,12 +293,45 @@
 	}
 }
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 767px) { 
+	.header {
+		max-height: 402px;
+	}
+	.need {
+		font-size: 28px;
+	}
+	.position{
+		font-size: 40px;
+	}
+	.btn {
+		height: 50px;
+	}
 	.content {
 		top: 140px;
     	left: 30px;
 	}
+	.raiting {
+		position: relative;
+		right: unset;
+		bottom: unset;
+		display: flex;
+		justify-content: center;
+		/* margin-top: 50px; */
+	}
 	.clients {
 		left: 30px;
+		bottom: -40px;
+	}
+}
+
+.clientsContainer {
+	/* display: flex; */
+	/* overflow-x: scroll; */
+}
+
+
+@media screen and (max-width: 460px) { 
+	.bg1 {
+		height: 550px;
 	}
 }
