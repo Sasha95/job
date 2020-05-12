@@ -43,6 +43,9 @@
   display: flex;
   width: 90vw;
   overflow: hidden;
+  height: 49px;
+    align-items: flex-end;
+    display: flex;
 }
 
 .ourClients {
@@ -71,15 +74,18 @@
 .raiting {
   position: absolute;
   display: flex;
-
   right: 280px;
   bottom: 130px;
   z-index: 10;
 }
 
-.raiting img {
-  display: flex;
-  align-self: flex-start;
+.raitingImg {
+	display: flex;
+	align-self: flex-start;
+}
+
+.raitingImg + .raitingImg {
+	margin-left: 20px;
 }
 
 .clients {
@@ -105,12 +111,13 @@
   composes: clientIcon;
   height: 20px;
   width: 120px;
+  align-self: flex-start;
 }
 
 .logo {
-	/* min-width: 215px; */
-	/* height: 64px; */
-	object-fit: contain;
+  /* min-width: 215px; */
+  /* height: 64px; */
+  object-fit: contain;
 }
 
 @media screen and (max-width: 1700px) {
@@ -284,10 +291,11 @@
     font-size: 40px;
   }
   .btn {
-    height: 50px;
+	height: 50px;
+	font-size: 20px;
   }
   .content {
-    top: 140px;
+    top: 175px;
     left: 30px;
   }
   .raiting {
@@ -300,13 +308,14 @@
   }
   .clients {
     left: 30px;
-    bottom: -40px;
+    bottom: -110px;
   }
   .bg1 {
-    height: 750px;
+    height: 790px;
   }
   .raiting {
-    margin-top: -160px;
+    margin-top: -142px;
+    margin-left: 235px;
   }
   .clientsContainer {
     /* overflow-x: scroll;
@@ -314,8 +323,19 @@
   }
 }
 
-/* @media screen and (max-width: 460px) { 
-	.bg1 {
-		height: 750px;
-	}
-} */
+@media screen and (max-width: 460px) {
+  .content {
+    top: 150px;
+  }
+  .clients {
+    bottom: -33px;
+  }
+  .raiting {
+	margin-top: -190px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn {
+	font-size: 16px;
+  }
+}

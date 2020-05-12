@@ -103,7 +103,7 @@ export const ModalShow: FC<IProps> = ({ show, hideModal }) => {
                             />
                             <Error isActive={nameError}>Введите Ваше имя</Error>
                         </div>
-                        <div className="col mt-3 mt-lg-none">
+                        <div className="col mt-3 mt-lg-0">
                             <Input
                                 styleLabel={styles.label}
                                 style={styles.input}
@@ -124,7 +124,7 @@ export const ModalShow: FC<IProps> = ({ show, hideModal }) => {
                             />
                             <Error isActive={phoneError}>Введите Ваш номер телефона</Error>
                         </div>
-                        <div className="col mt-3 mt-lg-none">
+                        <div className="col mt-3 mt-lg-0">
                             <label className={classnames(styles.fileUpload, file ? styles.success : "")}>
                                 <input
                                     ref={fileInputRef}
