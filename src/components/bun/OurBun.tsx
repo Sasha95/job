@@ -12,7 +12,7 @@ import item from "../../static/images/item.svg"
 export const OurBun = () => {
     return (
         <div className={styles.main}>
-          <a className={globalStyles.anchor} name="buns"></a>
+          <a className={globalStyles.anchor} name="buns"/>
           <img src={backgroud} alt="backgroud" className={styles.backgroud} />
             <div className={classnames(styles.wrapper, globalStyles.globalContainer)}>
                 <div className={classnames("row", globalStyles.globalContainer)}>
