@@ -58,10 +58,10 @@ export const Navbar = () => {
                                 <img src={close} alt="close" />
                             </a> */}
                         </div>
-                        <Link collapse={collapse} href={"#about"}>НАШИ ПЛЮШКИ</Link>
-                        <Link collapse={collapse} href={"#rewards"}>МЫ В РЕЙТИНГАХ</Link>
-                        <Link collapse={collapse} href={"#events"}>МЕРОПРИЯТИЯ</Link>
-                        <Link collapse={collapse} href={"#requires"}>КОНТАКТЫ</Link>
+                        <Link collapse={collapse} href={"#buns"}>НАШИ ПЛЮШКИ</Link>
+                        <Link collapse={collapse} href={"#rating"}>МЫ В РЕЙТИНГАХ</Link>
+                        <Link collapse={collapse} href={"#activity"}>МЕРОПРИЯТИЯ</Link>
+                        <Link collapse={collapse} href={"#contacts"}>КОНТАКТЫ</Link>
                     </ul>
                 </div>
             </div>

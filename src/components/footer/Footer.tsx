@@ -56,6 +56,7 @@ export const Footer = () => {
 
     return (
         <div key={key} className={styles.wrapper}>
+          <a className={globalStyles.anchor} name="contacts"></a>
             <div className={classnames(globalStyles.globalContainer)}>
                 <div className={"row m-0 px-0"}>
                     <form className={"col-lg-8 px-0"}>

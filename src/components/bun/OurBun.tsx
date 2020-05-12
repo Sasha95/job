@@ -12,7 +12,8 @@ import item from "../../static/images/item.svg"
 export const OurBun = () => {
     return (
         <div className={styles.main}>
-            <img src={backgroud} alt="backgroud" className={styles.backgroud} />
+          <a className={globalStyles.anchor} name="buns"></a>
+          <img src={backgroud} alt="backgroud" className={styles.backgroud} />
             <div className={classnames(styles.wrapper, globalStyles.globalContainer)}>
                 <div className={classnames("row", globalStyles.globalContainer)}>
                     <h1 className={classnames(globalStyles.title, styles.title)}>#нашиПЛЮШКИ</h1>

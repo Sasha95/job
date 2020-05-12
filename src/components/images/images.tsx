@@ -30,6 +30,7 @@ import img12jpg from "../../static/images/12.jpg"
 export const Images = () => {
   return(
     <div className={styles.items}>
+      <a className={globalStyle.anchor} name={"activity"}></a>
       <h1 className={classnames(globalStyle.title, styles.title)}>Наши мероприятия</h1>
       <p className={styles.headText}>Самое важное, что у нас происходит: конференции, участие
         в соревнованиях,<br/>

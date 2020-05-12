@@ -14,6 +14,7 @@ export const Raiting = () => {
 
     return (
         <div className={style.main}>
+          <a className={globalStyles.anchor} name={"rating"}></a>
             <h1 className={globalStyles.title}>Мы в рейтингах</h1>
             <h3 className={classnames(globalStyles.subtitle, style.subtitle)}>Несколько лет подряд, наша команда входит в топы Российских и международных рейтингов разработчиков</h3>
             <div className={classnames(style.awardsContainer, globalStyles.imageContainer)}>

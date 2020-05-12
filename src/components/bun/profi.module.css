@@ -71,13 +71,16 @@
   .text{
     font-size: 18px;
   }
+
   .titleProfi{
     font-size: 28px;
     padding-left: 16px;
     margin-bottom: 46px;
   }
+
   .textContainer{
     padding-left: 32px;
+    padding-top: 0;
   }
 }
 
