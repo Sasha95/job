@@ -7,6 +7,7 @@ import handshake from "../../static/images/handshake.svg"
 import backgroud from "../../static/images/bg.svg"
 import { Profi } from "./Profi"
 import men from "../../static/images/man.svg"
+import item from "../../static/images/item.svg"
 
 export const OurBun = () => {
     return (
@@ -23,10 +24,29 @@ export const OurBun = () => {
                                 <img className={styles.image} src={port} alt="port" />
                             </div>
                             <div className={classnames("col px-0", styles.text)}>
-                                <span>Высокая заработная плата <br /></span>
-                                <span>Максимально гибкий график<br /></span>
-                                <span>Программа переселения из других городов<br /></span>
-                                <span>Спортивные активитеты (байдарки, велосипеды, пейнбол, картинг, боулинг)</span>
+                              <div className={"d-flex align-items-start"}>
+                                <img className={"mr-1 pt-2 d-flex d-md-none mr-1"} src={item}/>
+                                <div>Высокая заработная плата</div>
+                                <br/>
+                              </div>
+                              <div className={"d-flex align-items-start"}>
+                                <img className={"mr-1 pt-2 d-flex d-md-none mr-1"} src={item}/>
+                                <div>Максимально гибкий график</div>
+                                <br/>
+                              </div>
+                              <div className={"d-flex align-items-start"}>
+                                <img className={"mr-1 pt-2 d-flex d-md-none mr-1"} src={item}/>
+                                <div>Программа переселения из других городов</div>
+                                <br/>
+                              </div>
+                              <div className={"d-flex align-items-start"}>
+                                <img className={"mr-1 pt-2 d-flex d-md-none mr-1"} src={item}/>
+                                <div>Спортивные активитеты (байдарки, велосипеды, пейнбол, картинг, боулинг)</div>
+                                <br/>
+                              </div>
+                                {/*<span className={"row"}><img className={"d-flex d-md-none mr-1"} src={item}/>Максимально гибкий график<br /></span>*/}
+                                {/*<span className={"row"}><img className={"d-flex d-md-none mr-1"} src={item}/>Программа переселения из других городов<br /></span>*/}
+                                {/*<span className={"row"}><img className={"d-flex d-md-none mr-1"} src={item}/>Спортивные активитеты (байдарки, велосипеды, пейнбол, картинг, боулинг)</span>*/}
                             </div>
                         </div>
                     </div>
@@ -36,11 +56,31 @@ export const OurBun = () => {
                                 <img className={styles.image} src={handshake} alt="handshake" />
                             </div>
                                 <div className={classnames("col px-0", styles.text)}>
-                                    <span>Горячие обеды за счет компании<br/></span>
-                                    <span>Просторный офис в самом центре города<br/></span>
-                                    <span>Книжная библиотека, PlayStation, кальян<br/></span>
-                                    <span>Печеньки, фрукты и мороженое!)<br/></span>
-                                    <span>Своя футбольная команда по мини-футболу</span>
+                                  <div className={"d-flex align-items-start"}>
+                                    <img className={"mr-1 pt-2 d-flex d-md-none mr-1"} src={item}/>
+                                    <div>Горячие обеды за счет компании</div>
+                                    <br/>
+                                  </div>
+                                  <div className={"d-flex align-items-start"}>
+                                    <img className={"mr-1 pt-2 d-flex d-md-none mr-1"} src={item}/>
+                                    <div>Просторный офис в самом центре города</div>
+                                    <br/>
+                                  </div>
+                                  <div className={"d-flex align-items-start"}>
+                                    <img className={"mr-1 pt-2 d-flex d-md-none mr-1"} src={item}/>
+                                    <div>Книжная библиотека, PlayStation, кальян</div>
+                                    <br/>
+                                  </div>
+                                  <div className={"d-flex align-items-start"}>
+                                    <img className={"mr-1 pt-2 d-flex d-md-none mr-1"} src={item}/>
+                                    <div>Печеньки, фрукты и мороженое!)</div>
+                                    <br/>
+                                  </div>
+                                  <div className={"d-flex align-items-start"}>
+                                    <img className={"mr-1 pt-2 d-flex d-md-none mr-1"} src={item}/>
+                                    <div>Своя футбольная команда по мини-футболу</div>
+                                    <br/>
+                                  </div>
                                 </div>
                         </div>
                     </div>
