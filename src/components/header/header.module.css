@@ -41,7 +41,6 @@
 }
 .clientsContainer {
   display: flex;
-  flex-wrap: nowrap;
   width: 90vw;
   overflow: hidden;
 }
@@ -87,25 +86,31 @@
   position: absolute;
   bottom: 190px;
 }
-.vtb {
+.vtbContainer {
   composes: clientIcon;
   height: 38px;
   width: 108px;
 }
-.huggies {
+.huggiesContainer {
   composes: clientIcon;
   height: 40px;
   width: 114px;
 }
-.sber {
+.sberContainer {
   composes: clientIcon;
   height: 36px;
   width: 159px;
 }
-.nokia {
+.nokiaContainer {
   composes: clientIcon;
   height: 20px;
   width: 120px;
+}
+
+.logo {
+	/* min-width: 215px; */
+	/* height: 64px; */
+	object-fit: contain;
 }
 
 @media screen and (max-width: 1700px) {
@@ -179,19 +184,19 @@
   .clients {
     bottom: 110px;
   }
-  .vtb {
+  .vtbContainer {
     height: 27px;
     width: 79px;
   }
-  .huggies {
+  .huggiesContainer {
     height: 29px;
     width: 83px;
   }
-  .sber {
+  .sberContainer {
     height: 26px;
     width: 116px;
   }
-  .nokia {
+  .nokiaContainer {
     height: 14px;
     width: 88px;
   }
@@ -225,19 +230,19 @@
   .bg1 {
     display: block;
   }
-  .vtb {
+  .vtbContainer {
     width: unset;
     height: unset;
   }
-  .huggies {
+  .huggiesContainer {
     width: unset;
     height: unset;
   }
-  .sber {
+  .sberContainer {
     width: unset;
     height: unset;
   }
-  .nokia {
+  .nokiaContainer {
     width: unset;
     height: unset;
   }
@@ -304,8 +309,8 @@
     margin-top: -160px;
   }
   .clientsContainer {
-    overflow-x: scroll;
-    overflow-y: hidden;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
   }
 }
 

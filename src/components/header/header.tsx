@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import globalStyles from "../globalStyles.module.css"
 import styles from "./header.module.css"
 import classnames from "classnames"
@@ -14,9 +14,14 @@ import rating_39 from "../../static/images/rating-39.svg"
 import rating_41 from "../../static/images/rating-41.svg"
 import { ModalShow } from "../modal/Modal"
 import Carousel from 'react-bootstrap/Carousel'
+import { useComponentSize } from "../../hooks/UseComponentSize"
+import { useWindowSize } from "../../hooks/UseWindowSize"
 
 export const Header = () => {
   const [show, setShow] = useState(false);
+  const [scroll, setScroll] = useState(0)
+  const innerContainerRef = useRef()
+
   const showModal = () => {
     setShow(true);
   };
@@ -25,17 +30,43 @@ export const Header = () => {
     setShow(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY
+      if (currentScroll !== scroll) {
+        setScroll(currentScroll)
+      }
+    }
+
+    document.addEventListener("scroll", handleScroll, { passive: true })
+
+    return () => {
+      // clean up the event handler when the component unmounts
+      document.removeEventListener("scroll", handleScroll)
+    }
+  }, [scroll])
+
+  const { height } = useWindowSize()
+  const { width: parentWidth } = useComponentSize(innerContainerRef)
+  const fullWidth = 650
+
+  let translateX =
+    (3 * ((fullWidth - parentWidth) * scroll)) / height
+  translateX =
+    translateX > fullWidth - parentWidth ? fullWidth - parentWidth : translateX
+
+  console.log(scroll, parentWidth, translateX)
+
   return (
     <>
       <ModalShow show={show} hideModal={hideModal} />
-      <header className={styles.header}>
+      <header className={styles.header} ref={innerContainerRef}>
         <img className={styles.ruporHeader} alt={"rupor"} src={rupor} />
         <img className={styles.bg1} alt={"rupor"} src={bg1} />
         <Navbar />
         <div className={globalStyles.globalContainer}>
           <div className={classnames(styles.content)}>
             <span className={styles.need}>Нам нужны</span>
-
 
             <Carousel controls={false} indicators={false} interval={2000}>
               <Carousel.Item>
@@ -59,9 +90,6 @@ export const Header = () => {
                 </div>
               </Carousel.Item>
             </Carousel>
-
-
-
             <a
               onClick={showModal}
               className={classnames(styles.btn, globalStyles.btn)}
@@ -73,18 +101,18 @@ export const Header = () => {
 
           <div className={styles.clients}>
             <span className={styles.ourClients}>Наши клиенты</span>
-            <div className={styles.clientsContainer}>
-              <div className={styles.vtb}>
-                <img src={vtb} alt={"vtb"} />
+            <div style={{ transform: `translateX(-${translateX}px)` }} className={styles.clientsContainer}>
+              <div className={styles.vtbContainer}>
+                <img className={styles.logo} src={vtb} alt={"vtb"} />
               </div>
-              <div className={styles.huggies}>
-                <img src={hugges} alt={"hugges"} />
+              <div className={styles.huggiesContainer}>
+                <img className={styles.logo} src={hugges} alt={"hugges"} />
               </div>
-              <div className={styles.sber}>
-                <img src={sber} alt={"sber"} />
+              <div className={styles.sberContainer}>
+                <img className={styles.logo} src={sber} alt={"sber"} />
               </div>
-              <div className={styles.nokia}>
-                <img src={nokia} alt={"nokia"} />
+              <div className={styles.nokiaContainer}>
+                <img className={styles.logo} src={nokia} alt={"nokia"} />
               </div>
             </div>
           </div>

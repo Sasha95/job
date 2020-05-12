@@ -16,7 +16,7 @@ interface IProps {
     hideModal: () => void;
 }
 
-export const ModalShow: FC<IProps> = memo(({ show, hideModal }) => {
+export const ModalShow: FC<IProps> = ({ show, hideModal }) => {
     const [key, setKey] = useState(v1().toString())
 
     const [load, setLoad] = useState(false);
@@ -170,4 +170,4 @@ export const ModalShow: FC<IProps> = memo(({ show, hideModal }) => {
             </Modal.Body>
         </Modal>
     )
-})
+}

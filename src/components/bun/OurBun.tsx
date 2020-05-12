@@ -13,16 +13,16 @@ export const OurBun = () => {
         <div className={styles.main}>
             <img src={backgroud} alt="backgroud" className={styles.backgroud} />
             <div className={classnames(styles.wrapper, globalStyles.globalContainer)}>
-                <div className={"row"}>
+                <div className={classnames("row", globalStyles.globalContainer)}>
                     <h1 className={classnames(globalStyles.title, styles.title)}>#нашиПЛЮШКИ</h1>
                 </div>
-                <div className={classnames("row d-flex flex-column flex-xl-row", styles.content)}>
+                <div className={classnames("row d-flex flex-column flex-xl-row mx-0 pl-0", styles.content, globalStyles.globalContainer)}>
                     <div className={classnames("col", styles.text)}>
                         <div className={"row md-mb-5 mb-xl-0"}>
                             <div className={"col-lg-2 d-flex align-self-center m-0"}>
                                 <img className={styles.image} src={port} alt="port" />
                             </div>
-                            <div className={classnames("col", styles.text)}>
+                            <div className={classnames("col px-0", styles.text)}>
                                 <span>Высокая заработная плата <br /></span>
                                 <span>Максимально гибкий график<br /></span>
                                 <span>Программа переселения из других городов<br /></span>
@@ -35,7 +35,7 @@ export const OurBun = () => {
                             <div className={"col-lg-2 d-flex align-self-center"}>
                                 <img className={styles.image} src={handshake} alt="handshake" />
                             </div>
-                                <div className={classnames("col", styles.text)}>
+                                <div className={classnames("col px-0", styles.text)}>
                                     <span>Горячие обеды за счет компании<br/></span>
                                     <span>Просторный офис в самом центре города<br/></span>
                                     <span>Книжная библиотека, PlayStation, кальян<br/></span>
