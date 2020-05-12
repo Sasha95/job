@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 28px;
+    color: #0047B3;
+    text-align: center;
+}
+
+.description {
+    font-size: 18px;
+    text-align: center;
+}
+
+.mail {
+    composes: description;
+    font-weight: bold;
+}

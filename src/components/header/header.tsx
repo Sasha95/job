@@ -16,18 +16,29 @@ import { ModalShow } from "../modal/Modal"
 import Carousel from 'react-bootstrap/Carousel'
 import { useComponentSize } from "../../hooks/UseComponentSize"
 import { useWindowSize } from "../../hooks/UseWindowSize"
+import { ModalResult } from "../modal/ModalResult"
 
 export const Header = () => {
   const [show, setShow] = useState(false);
+  const [showResult, setShowResult] = useState(false);
   const [scroll, setScroll] = useState(0)
   const innerContainerRef = useRef()
+
+  const [successMessage, setSuccessMessage] = useState("")
+  const [failMessage, setFailMessage] = useState("")
 
   const showModal = () => {
     setShow(true);
   };
-
   const hideModal = () => {
     setShow(false);
+  };
+
+  const showModalResult = () => {
+    setShowResult(true);
+  };
+  const hideModalResult = () => {
+    setShowResult(false);
   };
 
   useEffect(() => {
@@ -46,6 +57,15 @@ export const Header = () => {
     }
   }, [scroll])
 
+  useEffect(() => {
+    if(successMessage !== "" || failMessage !== "") {
+      hideModal();
+      showModalResult();
+      setFailMessage("")
+      setSuccessMessage("")
+    }
+  }, [successMessage, failMessage])
+
   const { height } = useWindowSize()
   const { width: parentWidth } = useComponentSize(innerContainerRef)
   const fullWidth = 650
@@ -57,7 +77,17 @@ export const Header = () => {
 
   return (
     <>
-      <ModalShow show={show} hideModal={hideModal} />
+      <ModalShow
+        setFailMessage={setFailMessage}
+        setSuccessMessage={setSuccessMessage}
+        show={show}
+        hideModal={hideModal}
+      />
+      <ModalResult 
+        hideModal={hideModalResult} 
+        result={failMessage!==""} 
+        show={showResult} 
+      />
       <header className={styles.header} ref={innerContainerRef}>
         <img className={styles.ruporHeader} alt={"rupor"} src={rupor} />
         <img className={styles.bg1} alt={"rupor"} src={bg1} />

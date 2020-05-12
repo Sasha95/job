@@ -56,11 +56,33 @@
     margin-left: 0;
     padding-right: 40px;
   }
+  .content{
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 1330px) {
   .content{
     padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .content {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .men {
+    max-width: 320px;
+    bottom: -45px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .men{
+    max-width: 250px;
   }
 }
 
@@ -83,3 +105,4 @@
     display: none;
   }
 }
+

@@ -80,7 +80,10 @@
   }
 }
 
-@media screen and (max-width: 1540px) {
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 38px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -134,3 +137,4 @@
     padding-right: 20px;
   }
 }
+

@@ -51,6 +51,22 @@
   }
 }
 
+@media screen and (max-width: 1240px) {
+  .textContainer{
+    padding-left: 60px;
+    padding-top: 45px;
+  }
+  .text{
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .text{
+    font-size: 25px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .text{
     font-size: 18px;

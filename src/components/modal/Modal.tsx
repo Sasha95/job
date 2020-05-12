@@ -1,4 +1,4 @@
-import React, { FC, memo, useState, useRef } from "react"
+import React, { FC, useState, useRef } from "react"
 import styles from "./modal.module.css"
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -14,9 +14,11 @@ import { v1 } from "uuid"
 interface IProps {
     show: boolean;
     hideModal: () => void;
+    setSuccessMessage: (x: string) => void;
+    setFailMessage: (x: string) => void;
 }
 
-export const ModalShow: FC<IProps> = ({ show, hideModal }) => {
+export const ModalShow: FC<IProps> = ({ show, hideModal, setFailMessage, setSuccessMessage }) => {
     const [key, setKey] = useState(v1().toString())
 
     const [load, setLoad] = useState(false);
@@ -32,10 +34,7 @@ export const ModalShow: FC<IProps> = ({ show, hideModal }) => {
 
     const [message, setMessage] = useState("")
 
-    const [successMessage, setSuccessMessage] = useState("")
-    const [failMessage, setFailMessage] = useState("")
-
-    const [file, setFile] = useState()
+    const [file, setFile] = useState("")
     const [fileName, setFileName] = useState("")
 
     const fileInputRef = useRef(null)
@@ -78,6 +77,8 @@ export const ModalShow: FC<IProps> = ({ show, hideModal }) => {
                 setPhone("")
                 setMessage("")
                 setMail("")
+                setFile("")
+                setFileName("")
                 setKey(v1().toString())
             } else {
                 setFailMessage(result.message)
