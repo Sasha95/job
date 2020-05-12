@@ -44,7 +44,6 @@ export const Navbar = () => {
                             color={collapse && !hidden && window.innerWidth > 1024 ? "#0047b3" : "#ffffff"} 
                         /> :
                         <Close color={"#ffffff"} />
-
                     }
                 </button>
 
