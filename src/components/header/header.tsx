@@ -101,18 +101,20 @@ export const Header = () => {
 
           <div className={styles.clients}>
             <span className={styles.ourClients}>Наши клиенты</span>
-            <div style={{ transform: `translateX(-${translateX}px)` }} className={styles.clientsContainer}>
-              <div className={styles.vtbContainer}>
-                <img className={styles.logo} src={vtb} alt={"vtb"} />
-              </div>
-              <div className={styles.huggiesContainer}>
-                <img className={styles.logo} src={hugges} alt={"hugges"} />
-              </div>
-              <div className={styles.sberContainer}>
-                <img className={styles.logo} src={sber} alt={"sber"} />
-              </div>
-              <div className={styles.nokiaContainer}>
-                <img className={styles.logo} src={nokia} alt={"nokia"} />
+            <div className={styles.clientsContainer}>
+              <div style={{ transform: `translateX(-${translateX}px)`, display: "flex" }} >
+                <div className={styles.vtbContainer}>
+                  <img className={styles.logo} src={vtb} alt={"vtb"} />
+                </div>
+                <div className={styles.huggiesContainer}>
+                  <img className={styles.logo} src={hugges} alt={"hugges"} />
+                </div>
+                <div className={styles.sberContainer}>
+                  <img className={styles.logo} src={sber} alt={"sber"} />
+                </div>
+                <div className={styles.nokiaContainer}>
+                  <img className={styles.logo} src={nokia} alt={"nokia"} />
+                </div>
               </div>
             </div>
           </div>

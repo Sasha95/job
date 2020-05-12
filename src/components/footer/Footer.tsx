@@ -39,7 +39,7 @@ export const Footer = () => {
         setContactError(contactCurrentError)
 
         if (!nameCurrentError && !contactCurrentError) {
-            const result = await sendResume(file, fileName, name, contact, message);
+            const result = await sendResume({file, fileName, name, contact, message});
 
             if (result.status) {
                 setSuccessMessage(result.message)

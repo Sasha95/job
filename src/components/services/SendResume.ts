@@ -5,17 +5,26 @@ export interface IResponse {
   message: string
 }
 
-export const sendResume = async (
+interface IRequest {
   file: string,
   fileName: string | undefined,
   name: string,
-  phone: string,
+  contact: string,
   message?: string
+}
+
+export const sendResume = async ({
+  file,
+  fileName,
+  name,
+  contact,
+  message
+} : IRequest
 ): Promise<IResponse> => {
   try {
     const body = new FormData()
     body.append("name", name)
-    body.append("phone", phone)
+    body.append("contact", contact)
     body.append("message", message)
 
     if (file) {

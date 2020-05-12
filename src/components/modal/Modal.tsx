@@ -68,8 +68,8 @@ export const ModalShow: FC<IProps> = ({ show, hideModal }) => {
 
         if (!nameCurrentError && !phoneCurrentError && !mailCurrentError) {
             setLoad(true);
-
-            const result = await sendResume(file, fileName, name, mail + ' ' + phone, message);
+            const contact: string = mail + ' ' + phone;
+            const result = await sendResume({file, fileName, name, contact, message});
 
             if (result.status) {
                 setSuccessMessage(result.message)
