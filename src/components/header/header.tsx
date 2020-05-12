@@ -118,8 +118,8 @@ export const Header = () => {
           </div>
 
           <div className={styles.raiting}>
-            <img src={rating_41} alt={"tagline"} />
-            <img src={rating_39} alt={"tagline"} />
+            <img className={styles.raitingImg} src={rating_41} alt={"tagline"} />
+            <img className={styles.raitingImg} src={rating_39} alt={"tagline"} />
           </div>
         </div>
       </header>

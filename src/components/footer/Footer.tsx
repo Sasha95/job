@@ -115,7 +115,7 @@ export const Footer = () => {
                         <Social classname={"d-none d-lg-flex"} />
                     </div>
                 </div>
-                <div className={"row mx-3 d-flex d-lg-none pb-4"}>
+                <div className={"row mx-0 d-flex d-lg-none pb-4"}>
                     <div className="col">
                         <div className={styles.footerLogo}>
                             <img className={styles.image} alt={"logo"} src={logo} />
