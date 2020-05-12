@@ -55,8 +55,6 @@ export const Header = () => {
   translateX =
     translateX > fullWidth - parentWidth ? fullWidth - parentWidth : translateX
 
-  console.log(scroll, parentWidth, translateX)
-
   return (
     <>
       <ModalShow show={show} hideModal={hideModal} />

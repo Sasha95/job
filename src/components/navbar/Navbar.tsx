@@ -4,10 +4,10 @@ import globalStyles from "../globalStyles.module.css"
 import classnames from "classnames"
 import logo from "../../static/images/logohead.svg"
 import { useHideOnScrolled } from "../../hooks/UseHideScroll"
-import close from "../../images/close.svg"
 import { Burger } from "../../static/images/Burger"
 import { Link } from "./Link"
 import { useOutsideAlerter } from "../../hooks/UseOutsideAlerter"
+import {Close} from "../../static/images/Close"
 
 export const Navbar = () => {
     const hidden = useHideOnScrolled();
@@ -17,6 +17,8 @@ export const Navbar = () => {
     useEffect(() => {
         setCollapse(true)
     }, [isClick])
+
+    console.log(hidden, collapse)
 
     return (
         <nav ref={wrapperRef} className={classnames(styles.navContainer, "navbar navbar-expand-xl sticky-top p-0", hidden ? styles.scroll : "")}>
@@ -36,7 +38,14 @@ export const Navbar = () => {
                     data-target="#navbarNav" 
                     aria-controls="navbarNav"
                 >
-                    <Burger color={collapse && !hidden && window.innerWidth > 1024 ? "#0047b3" : "#ffffff"} />
+                    {
+                        collapse?
+                        <Burger 
+                            color={collapse && !hidden && window.innerWidth > 1024 ? "#0047b3" : "#ffffff"} 
+                        /> :
+                        <Close color={"#ffffff"} />
+
+                    }
                 </button>
 
                 <div className={`${collapse ? "collapse" : ""} navbar-collapse`} id="navbarNav">
@@ -45,9 +54,9 @@ export const Navbar = () => {
                             <a href="#">
                                 <div className={styles.logo}></div>
                             </a>
-                            <a href="#">
+                            {/* <a href="#">
                                 <img src={close} alt="close" />
-                            </a>
+                            </a> */}
                         </div>
                         <Link collapse={collapse} href={"#about"}>НАШИ ПЛЮШКИ</Link>
                         <Link collapse={collapse} href={"#rewards"}>МЫ В РЕЙТИНГАХ</Link>
