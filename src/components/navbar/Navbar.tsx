@@ -8,17 +8,18 @@ import { Burger } from "../../static/images/Burger"
 import { Link } from "./Link"
 import { useOutsideAlerter } from "../../hooks/UseOutsideAlerter"
 import {Close} from "../../static/images/Close"
+import { useComponentSize } from "../../hooks/UseComponentSize"
 
 export const Navbar = () => {
     const hidden = useHideOnScrolled();
-    const [collapse, setCollapse] = useState(true);
+  const [collapse, setCollapse] = useState(true);
     const wrapperRef = useRef(null);
     const isClick = useOutsideAlerter(wrapperRef);
     useEffect(() => {
         setCollapse(true)
     }, [isClick])
 
-    console.log(hidden, collapse)
+    const { width: parentWidth } = useComponentSize(wrapperRef)
 
     return (
         <nav ref={wrapperRef} className={classnames(styles.navContainer, "navbar navbar-expand-xl sticky-top p-0", hidden ? styles.scroll : "")}>
@@ -41,7 +42,7 @@ export const Navbar = () => {
                     {
                         collapse?
                         <Burger 
-                            color={collapse && !hidden && window.innerWidth > 1024 ? "#0047b3" : "#ffffff"} 
+                            color={collapse && !hidden && parentWidth > 1024 ? "#0047b3" : "#ffffff"} 
                         /> :
                         <Close color={"#ffffff"} />
                     }
