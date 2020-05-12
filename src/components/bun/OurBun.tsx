@@ -19,8 +19,8 @@ export const OurBun = () => {
                 </div>
                 <div className={classnames("row d-flex flex-column flex-xl-row mx-0 pl-0", styles.content, globalStyles.globalContainer)}>
                     <div className={classnames("col", styles.text)}>
-                        <div className={"row md-mb-5 mb-xl-0"}>
-                            <div className={"col-lg-2 d-flex align-self-center m-0"}>
+                        <div className={"row md-mb-5 mb-xl-0 mb-md-5"}>
+                            <div className={"col-2 d-none d-md-flex align-self-center m-0"}>
                                 <img className={styles.image} src={port} alt="port" />
                             </div>
                             <div className={classnames("col px-0", styles.text)}>
@@ -44,15 +44,12 @@ export const OurBun = () => {
                                 <div>Спортивные активитеты (байдарки, велосипеды, пейнбол, картинг, боулинг)</div>
                                 <br/>
                               </div>
-                                {/*<span className={"row"}><img className={"d-flex d-md-none mr-1"} src={item}/>Максимально гибкий график<br /></span>*/}
-                                {/*<span className={"row"}><img className={"d-flex d-md-none mr-1"} src={item}/>Программа переселения из других городов<br /></span>*/}
-                                {/*<span className={"row"}><img className={"d-flex d-md-none mr-1"} src={item}/>Спортивные активитеты (байдарки, велосипеды, пейнбол, картинг, боулинг)</span>*/}
                             </div>
                         </div>
                     </div>
                     <div className={"col"}>
                         <div className={"row"}>
-                            <div className={"col-lg-2 d-flex align-self-center"}>
+                            <div className={"col-2 d-none d-md-flex align-self-center m-0"}>
                                 <img className={styles.image} src={handshake} alt="handshake" />
                             </div>
                                 <div className={classnames("col px-0", styles.text)}>

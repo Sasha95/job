@@ -54,6 +54,13 @@
   .content{
     margin-right: 0;
     margin-left: 0;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .content{
+    padding-right: 0;
   }
 }
 
@@ -61,7 +68,6 @@
   .text{
     font-size: 26px;
   }
-
 }
 
 @media screen and (max-width: 768px) {
